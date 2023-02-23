@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { NavData } from "../data/AppData";
+import { NavData , TechStack} from "../data/AppData";
 
 // Getting Last used theme from local storage
 if (typeof window !== "undefined") {
@@ -15,6 +15,9 @@ export interface CounterState {
 	themeToggle: boolean;
 	navData: any[];
 	currentTheme: string;
+	isChecked: boolean;
+	skillshead: [],
+	stackhead: []
 }
 
 const initialState: CounterState = {
@@ -22,6 +25,9 @@ const initialState: CounterState = {
 	themeToggle: false,
 	navData: NavData,
 	currentTheme: item,
+	isChecked: false,
+	skillshead: TechStack,
+	stackhead: []
 };
 
 const appSlice = createSlice({
@@ -34,6 +40,11 @@ const appSlice = createSlice({
 		},
 		setThemeToggle: (state) => {
 			state.themeToggle = !state.themeToggle;
+
+			console.log(state.themeToggle);
+		},
+		setIsChecked: (state) => {
+			state.themeToggle = true;
 
 			console.log(state.themeToggle);
 		},
@@ -53,6 +64,19 @@ const appSlice = createSlice({
 					: { ...item, state: false };
 			});
 			state.navData = X;
+			console.log("greeen", state.navData, payload, X);
+		},
+		toggleSkillsBox: (state, { payload }) => {
+			// const navItem = state.navData.find((item) => item.id === payload);
+			// navItem.state = navItem ? !navItem.state : false;
+
+			const X = state.skillshead.map((item) => {
+				console.log(item.id, "green");
+				return item.id === payload
+					? { ...item, state: !item.state }
+					: item;
+			});
+			state.skillshead = X;
 			console.log("greeen", state.navData, payload, X);
 		},
 		setTheme: (state, { payload }) => {
@@ -97,6 +121,8 @@ export const {
 	setNavSelect,
 	setCloseThemeBar,
 	setTheme,
+	setIsChecked,
+	toggleSkillsBox
 } = appSlice.actions;
 
 export default appSlice.reducer;

@@ -1,19 +1,68 @@
 import React from "react";
 import serviceStyle from "../../styles/Service.module.scss";
-import { CiLocationArrow1 } from "react-icons/ci";
+// import { arrow } from "react-icons/ai";
 import ServiceModal from "./ServiceModal";
+import { Principles } from "@/data/AppData";
+import { motion } from "framer-motion";
+import {
+	fadeIn,
+	planetVariants,
+	staggerContainer,
+	zoomIn,
+} from "@/utils/motion";
 
 const Services = () => {
 	return (
-		<section id="service" className={`${serviceStyle.service_section}`}>
-			<div className={`${serviceStyle.service_card}`}>
+		<motion.section id="service" className={`${serviceStyle.service_section}`}>
+			<motion.div className={`${serviceStyle.service_head_box}`}>
+				<h1 className={`${serviceStyle.service_head}`}>Services</h1>
+				<p className={`${serviceStyle.service_desc}`}>What i offer</p>
+			</motion.div>
+			<motion.div className={serviceStyle.service_card_block}>
+				{Principles.sort((a, b) => (a.type < b.type ? -1 : 1)).map((item) => (
+					<motion.div
+						variants={zoomIn(0, 1)}
+						whileInView="show"
+						initial="hidden"
+						viewport={{ once: false, amount: 0.25 }}
+						key={item.id}
+						className={`${serviceStyle.service_card}`}>
+						<motion.h1
+							variants={fadeIn("up", "tween", 0.6, 1)}
+							whileInView="show"
+							initial="hidden"
+							viewport={{ once: false, amount: 0.25 }}
+							className={`${serviceStyle.card_desc}`}>
+							{item.type}
+						</motion.h1>
+						<div className={`${serviceStyle.card_icon_box}`}>
+							<motion.span
+								className={`${serviceStyle.card_icon}`}
+								variants={fadeIn("right", "tween", 0.6, 1)}
+								whileInView="show"
+								initial="hidden"
+								viewport={{ once: false, amount: 0.25 }}>
+								{item?.icon}
+							</motion.span>
+						</div>
+						<div className={`${serviceStyle.line_through}`} />
+						<motion.div
+							variants={fadeIn("down", "tween", 0.6, 1)}
+							whileInView="show"
+							initial="hidden"
+							viewport={{ once: false, amount: 0.25 }}
+							className={`${serviceStyle.service_info}`}>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+							nihil ab? Quos quibusdam ex facere corrupti quidem numquam.
+						</motion.div>
+					</motion.div>
+				))}
 				{/* <div className={`${serviceStyle.service_desc}`}>
 					<h1>Web Development Services</h1>{" "}
 					<CiLocationArrow1 className={`${serviceStyle.service_icon}`} />
 				</div> */}
-			</div>
-			<ServiceModal />
-		</section>
+			</motion.div>
+		</motion.section>
 	);
 };
 

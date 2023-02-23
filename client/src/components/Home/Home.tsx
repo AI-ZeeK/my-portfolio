@@ -39,72 +39,70 @@ const HomePage = () => {
 							</Link>
 						</motion.div>
 					</aside>
-					<div className="relative">
-						<motion.div
-							variants={fadeIn("left", "tween", 0.2, 1)}
-							whileInView="show"
-							initial="hidden"
-							viewport={{ once: false, amount: 0.25 }}
-							className={`${homeStyles.home__Image}`}>
-							<svg
-								className={`${homeStyles.home__blob}`}
-								viewBox="120 0 900 1000"
-								xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<filter
-										id="grain"
-										x="-50vw"
-										y="-50vh"
-										width="100vw"
-										height="100vh">
-										<feFlood flood-color="#ffffff" result="neutral-gray" />
-										<feTurbulence
-											in="neutral-gray"
-											type="fractalNoise"
-											baseFrequency="2.5"
-											numOctaves="100"
-											stitchTiles="stitch"
-											result="noise"
-										/>
-										<feColorMatrix
-											in="noise"
-											type="saturate"
-											values="0"
-											result="destaturatedNoise"></feColorMatrix>
-										<feComponentTransfer
-											in="desaturatedNoise"
-											result="theNoise">
-											<feFuncA type="table" tableValues="0 0 0.35 0"></feFuncA>
-										</feComponentTransfer>
-										<feBlend
-											in="SourceGraphic"
-											in2="theNoise"
-											mode="soft-light"
-											result="noisy-image"
-										/>
-									</filter>
-									<clipPath id="shape">
-										<path
-											fill="currentColor"
-											d="M882,648Q796,796,648,851.5Q500,907,323.5,880Q147,853,125,676.5Q103,500,169,367.5Q235,235,367.5,162Q500,89,650,144.5Q800,200,884,350Q968,500,882,648Z"></path>
-									</clipPath>
-								</defs>
-								<g filter="url(#grain)" clip-path="url(#shape)">
+					{/* <div className={`relative ${homeStyles.home_img_box}`}> */}
+					<motion.div
+						variants={fadeIn("left", "tween", 0.2, 1)}
+						whileInView="show"
+						initial="hidden"
+						viewport={{ once: false, amount: 0.25 }}
+						className={`${homeStyles.home__Image}`}>
+						<svg
+							className={`${homeStyles.home__blob}`}
+							viewBox="120 0 900 1000"
+							xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<filter
+									id="grain"
+									x="-50vw"
+									y="-50vh"
+									width="100vw"
+									height="100vh">
+									<feFlood flood-color="#ffffff" result="neutral-gray" />
+									<feTurbulence
+										in="neutral-gray"
+										type="fractalNoise"
+										baseFrequency="2.5"
+										numOctaves="100"
+										stitchTiles="stitch"
+										result="noise"
+									/>
+									<feColorMatrix
+										in="noise"
+										type="saturate"
+										values="0"
+										result="destaturatedNoise"></feColorMatrix>
+									<feComponentTransfer in="desaturatedNoise" result="theNoise">
+										<feFuncA type="table" tableValues="0 0 0.35 0"></feFuncA>
+									</feComponentTransfer>
+									<feBlend
+										in="SourceGraphic"
+										in2="theNoise"
+										mode="soft-light"
+										result="noisy-image"
+									/>
+								</filter>
+								<clipPath id="shape">
 									<path
-										fill=""
-										d="M882,648Q796,796,648,851.5Q500,907,323.5,880Q147,853,125,676.5Q103,500,169,367.5Q235,235,367.5,162Q500,89,650,144.5Q800,200,884,350Q968,500,882,648Z"
-									/>
-									<image
-										className={`${homeStyles.home__blob_Image}`}
-										x="70"
-										y="160"
-										// style="width: 100%"
-										xlinkHref="/2-preview.png"
-									/>
-								</g>
-							</svg>
-						</motion.div>
-					</div>
+										fill="currentColor"
+										d="M882,648Q796,796,648,851.5Q500,907,323.5,880Q147,853,125,676.5Q103,500,169,367.5Q235,235,367.5,162Q500,89,650,144.5Q800,200,884,350Q968,500,882,648Z"></path>
+								</clipPath>
+							</defs>
+							<g filter="url(#grain)" clip-path="url(#shape)">
+								<path
+									fill=""
+									d="M882,648Q796,796,648,851.5Q500,907,323.5,880Q147,853,125,676.5Q103,500,169,367.5Q235,235,367.5,162Q500,89,650,144.5Q800,200,884,350Q968,500,882,648Z"
+								/>
+								<image
+									className={`${homeStyles.home__blob_Image}`}
+									x="70"
+									y="160"
+									// style="width: 100%"
+									xlinkHref="/2-preview.png"
+								/>
+							</g>
+						</svg>
+					</motion.div>
+					{/* </div> */}
 					<motion.div
 						variants={staggerContainer}
 						whileInView="show"
@@ -144,7 +142,9 @@ const HomePage = () => {
 								href="#contact"
 								className={`btn_primary ${homeStyles.btn_primary} ${homeStyles.button__flex}`}>
 								Contact Me
-								<GiPaperPlane className={`text-[1.4rem]`} />
+								<GiPaperPlane
+									className={`text-[1.4rem] transition ${homeStyles.icon}`}
+								/>
 							</Link>
 						</motion.div>
 					</motion.div>

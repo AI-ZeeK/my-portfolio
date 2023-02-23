@@ -5,6 +5,10 @@ import {
 	MdOutlinePalette,
 	MdPalette,
 } from "react-icons/md";
+import {
+	HiSparkles,
+	HiOutlineSparkles,
+} from "react-icons/hi";
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,17 +26,17 @@ import { staggerContainer, slideIn, fadeIn } from "../../utils/motion";
 const AiZeekLogo = "/AiZeek.png";
 const AiZeekProfile = "/profile.jpg";
 const Navigation = () => {
-	const { navToggle, themeToggle, navData, currentTheme } = useSelector(
-		(store: any) => store.app
-	);
+	const { navToggle, isChecked, themeToggle, navData, currentTheme } =
+		useSelector((store: any) => store.app);
 
 	const dispatch = useDispatch();
 
-	const handleClick = () => {
-		dispatch(setNavToggle());
-	};
 	const handleChecked = (e: any) => {
 		dispatch(setTheme(e.target.value));
+	};
+
+	const handleCheckClick = () => {
+		handleChecked(1);
 	};
 	const handleThemeToggle = () => {
 		dispatch(setThemeToggle());
@@ -40,6 +44,10 @@ const Navigation = () => {
 	const themeBarRef: any = useRef(null);
 	useEffect(() => {
 		document.addEventListener("click", handleOutsideClick, true);
+
+		return () => {
+			document.removeEventListener("click", handleOutsideClick, true);
+		};
 	}, []);
 	useEffect(() => {
 		dispatch(setTheme(currentTheme));
@@ -57,11 +65,11 @@ const Navigation = () => {
 			} `}>
 			<div className={navStyles.nav_logo_box}>
 				<motion.div
-					className={navStyles.nav_logo_image}
 					variants={fadeIn("left", "tween", 0.2, 1)}
 					whileInView="show"
 					initial="hidden"
-					viewport={{ once: true, amount: 0.25 }}>
+					viewport={{ once: true, amount: 0.25 }}
+					className={navStyles.nav_logo_image}>
 					<Image
 						width={500}
 						height={500}
@@ -86,8 +94,8 @@ const Navigation = () => {
 					className={`${navStyles.nav_links_block}  ${
 						navToggle ? navStyles.active : ""
 					} `}>
-					{navData.map((item: any) => (
-						<NavLinks key={item.id} id={item.id} {...item} />
+					{navData?.map((item: any) => (
+						<NavLinks key={item?.id} id={item?.id} {...item} />
 					))}
 					<div className={`${navStyles.nav_logo_image} ${navStyles.huge}`}>
 						<Image
@@ -102,9 +110,11 @@ const Navigation = () => {
 			</div>
 			<div className={navStyles.nav_theme_area} onClick={handleThemeToggle}>
 				{themeToggle ? (
-					<MdPalette className={`${navStyles.theme_toggle}`} />
+					// <MdPalette className={`${navStyles.theme_toggle}`} />
+					<HiSparkles className={`${navStyles.theme_toggle}`} />
 				) : (
-					<MdOutlinePalette className={`${navStyles.theme_toggle}`} />
+					// <MdOutlinePalette className={`${navStyles.theme_toggle}`} />
+					<HiOutlineSparkles className={`${navStyles.theme_toggle}`} />
 				)}
 			</div>
 			<div

@@ -36,7 +36,7 @@ export const slideIn = (direction, type, delay, duration) => ({
 	},
 });
 
-export const staggerContainer: any   = (
+export const staggerContainer: any = (
 	staggerChildren: any,
 	delayChildren: any
 ) => ({
@@ -113,21 +113,23 @@ export const planetVariants = (direction) => ({
 	hidden: {
 		x: direction === "left" ? "-100%" : "100%",
 		rotate: 120,
+		opacity: 0,
 	},
 	show: {
 		x: 0,
 		rotate: 0,
+		opacity: 1,
 		transition: {
 			type: "spring",
 			duration: 1.8,
-			delay: 0.5,
+			delay: 0.1,
 		},
 	},
 });
 
 export const zoomIn = (delay, duration) => ({
 	hidden: {
-		scale: 0,
+		scale: 0.6,
 		opacity: 0,
 	},
 	show: {
