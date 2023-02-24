@@ -127,43 +127,51 @@ const Navigation = () => {
 				</div>
 				<div className={`${navStyles.hr}`} />
 				<div className={`${navStyles.select_block}`}>
-					<p>Lights Out</p>
+					<label htmlFor="black" className="radio-label">
+						Lights Out
+					</label>
 					<input
 						onChange={handleChecked}
 						type="radio"
 						name="theme"
-						id=""
+						id="black"
 						value="black"
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
-					<p>Dim</p>
+					<label htmlFor="dim" className="radio-label">
+						Dim
+					</label>
 					<input
 						onChange={handleChecked}
 						type="radio"
 						name="theme"
-						id=""
+						id="dim"
 						value="dim"
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
-					<p>Coffee</p>
+					<label htmlFor="coffee" className="radio-label">
+						Coffee
+					</label>
 					<input
 						onChange={handleChecked}
 						type="radio"
 						name="theme"
-						id=""
+						id="coffee"
 						value="coffee"
 					/>
 				</div>
 
 				<div className={`${navStyles.select_block}`}>
-					<p>Light</p>
+					<label htmlFor="light" className="radio-label">
+						Light
+					</label>
 					<input
 						onChange={handleChecked}
 						type="radio"
 						name="theme"
-						id=""
+						id="light"
 						value="light"
 					/>
 				</div>

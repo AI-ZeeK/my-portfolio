@@ -35,7 +35,7 @@ html {
 :root {
 	--main-bg: #fafafa;
 	--glass-bg: #73430022;
-
+	--placeholder-text-color: #40404088;
 	--tertiary-bg: #fafafa;
 	--main-text-color: #1a1a1a;
 	--footer-text-color: #ffffff;
@@ -90,7 +90,7 @@ body.dim {
 	--main-bg: #1a232e;
 	--glass-bg: #ffd29422;
 	--tertiary-bg: #2b3642;
-
+	--placeholder-text-color: #85858588;
 	--main-text-color: #ffffff;
 	--footer-text-color: #ffffff;
 	--main-text-color2: var(--main-text-color);
@@ -143,6 +143,7 @@ body.black {
 	--glass-bg: #ffd29422;
 	--main-text-color: #ffd294;
 	--btn-text-color: #ffd294;
+	--placeholder-text-color: #a6896288;
 
 	--footer-text-color: #ffd294;
 	--main-text-color2: var(--main-text-color);
@@ -192,6 +193,7 @@ body.coffee {
 	--main-bg: #3a2200;
 	--tertiary-bg: #333333;
 	--glass-bg: #ffd29422;
+	--placeholder-text-color: #a6896288;
 	--btn-text-color: #ffd294;
 	--main-text-color: #ffd294;
 	--footer-text-color: #ffd294;
@@ -251,6 +253,16 @@ a {
 
 li {
 	list-style: none;
+}
+
+::placeholder {
+	color: var(--placeholder-text-color);
+}
+::-webkit-input-::placeholder {
+	color: var(--placeholder-text-color);
+}
+:-ms-input-::placeholder {
+	color: var(--placeholder-text-color);
 }
 
 .line-through {

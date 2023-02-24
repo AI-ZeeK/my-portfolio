@@ -87,7 +87,7 @@ const Contact = () => {
 						<input
 							className={`${contactStyles.contact_input}`}
 							type="text"
-							placeholder="Your name"
+							placeholder="Your Full Name"
 						/>
 					</div>
 					<div className={`${contactStyles.contact_input_box}`}>
@@ -95,14 +95,14 @@ const Contact = () => {
 						<input
 							className={`${contactStyles.contact_input}`}
 							type="email"
-							placeholder="Your email"
+							placeholder="Your Email Address"
 						/>
 					</div>
 					<div className={`${contactStyles.contact_input_box}`}>
 						<label htmlFor="">Message*</label>
 						<textarea
 							className={`${contactStyles.contact_textarea}`}
-							rows={2}
+							rows={4}
 							cols={2}
 							placeholder="Your message"></textarea>
 					</div>

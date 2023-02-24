@@ -177,6 +177,12 @@ export const TechStack = [
 				img: bootstrap,
 			},
 			{
+				id: "58b892680ghi",
+				state: false,
+				desc: "Material UI",
+				img: materialui,
+			},
+			{
 				id: "c2171d78j9a3",
 				state: false,
 				desc: "Framer Motion",
@@ -256,6 +262,12 @@ export const TechStack = [
 				desc: "Hardhat",
 				img: hardhat,
 			},
+			{
+				id: "1e0fb5j107f2",
+				state: false,
+				desc: "Metamask",
+				img: metamask,
+			},
 		],
 	},
 	{
@@ -291,7 +303,24 @@ export const TechStack = [
 				desc: "VsCode",
 				img: vscode,
 			},
-
+			{
+				id: "1e0gb067f07f2",
+				state: false,
+				desc: "Google Analytics",
+				img: googleanalytics,
+			},
+			{
+				id: "1e0gb069p07f2",
+				state: false,
+				desc: "MS Word",
+				img: word,
+			},
+			{
+				id: "1e0gb069p12f2",
+				state: false,
+				desc: "Stripe",
+				img: stripe,
+			},
 			{
 				id: "1e0gb0c10jd2",
 				state: false,
@@ -308,6 +337,7 @@ export const Principles = [
 		id: "04c35840",
 		icon: <BsCodeSlash />,
 		type: "Responsive Web Design",
+		desc: "",
 	},
 	{
 		id: "2dc8c719",
