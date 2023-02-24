@@ -127,7 +127,7 @@ const Navigation = () => {
 				</div>
 				<div className={`${navStyles.hr}`} />
 				<div className={`${navStyles.select_block}`}>
-					<label htmlFor="black" className="radio-label">
+					<label htmlFor="black" className={`${navStyles.radio_label}`}>
 						Lights Out
 					</label>
 					<input
@@ -139,7 +139,7 @@ const Navigation = () => {
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
-					<label htmlFor="dim" className="radio-label">
+					<label htmlFor="dim" className={`${navStyles.radio_label}`}>
 						Dim
 					</label>
 					<input
@@ -151,7 +151,7 @@ const Navigation = () => {
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
-					<label htmlFor="coffee" className="radio-label">
+					<label htmlFor="coffee" className={`${navStyles.radio_label}`}>
 						Coffee
 					</label>
 					<input
@@ -164,7 +164,7 @@ const Navigation = () => {
 				</div>
 
 				<div className={`${navStyles.select_block}`}>
-					<label htmlFor="light" className="radio-label">
+					<label htmlFor="light" className={`${navStyles.radio_label}`}>
 						Light
 					</label>
 					<input
