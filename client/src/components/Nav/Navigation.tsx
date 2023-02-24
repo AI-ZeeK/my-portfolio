@@ -41,6 +41,12 @@ const Navigation = () => {
 	const handleThemeToggle = () => {
 		dispatch(setThemeToggle());
 	};
+	const handleOutsideClick = (e: any) => {
+		if (!themeBarRef.current.contains(e.target)) {
+			dispatch(setCloseThemeBar());
+		}
+		return;
+	};
 	const themeBarRef: any = useRef(null);
 	useEffect(() => {
 		document.addEventListener("click", handleOutsideClick, true);
@@ -52,12 +58,7 @@ const Navigation = () => {
 	useEffect(() => {
 		dispatch(setTheme(currentTheme));
 	});
-	const handleOutsideClick = (e: any) => {
-		if (!themeBarRef.current.contains(e.target)) {
-			dispatch(setCloseThemeBar());
-		}
-		return;
-	};
+	
 	return (
 		<nav
 			className={`${navStyles.nav_block} ${
