@@ -49,7 +49,14 @@ const postman = "/postman.svg";
 const sass = "/sass-1.svg";
 const vscode = "/visual-studio-code-1.svg";
 const hardhat = "/hardhat-icon.svg";
+const metamask = "/metamask.svg";
 const restapi = "/rest-api-icon.svg";
+const googleanalytics = "/google-analytics.svg";
+const bootstrap = "/bootstrap.svg";
+const framer = "/framer.svg";
+const materialui = "/material-ui.svg";
+const word = "/word-1.svg";
+const stripe = "/stripe-4.svg";
 const ethers = "/download.png";
 
 export const NavData = [
@@ -156,11 +163,24 @@ export const TechStack = [
 				desc: "Tailwind",
 				img: tailwindcss,
 			},
+
 			{
 				id: "58b833780bb5",
 				state: false,
 				desc: "SCSS",
 				img: sass,
+			},
+			{
+				id: "58b833780ghi",
+				state: false,
+				desc: "Bootstrap",
+				img: bootstrap,
+			},
+			{
+				id: "c2171d78j9a3",
+				state: false,
+				desc: "Framer Motion",
+				img: framer,
 			},
 		],
 	},
