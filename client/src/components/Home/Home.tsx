@@ -139,7 +139,7 @@ const HomePage = () => {
 							initial="hidden"
 							viewport={{ once: false, amount: 0.25 }}>
 							<Link
-								href="#contact"
+								href="#contact-me"
 								className={`btn_primary ${homeStyles.btn_primary} ${homeStyles.button__flex}`}>
 								Contact Me
 								<GiPaperPlane

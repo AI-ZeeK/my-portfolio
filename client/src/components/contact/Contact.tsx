@@ -27,7 +27,7 @@ const Contact = () => {
 					</p>
 					<motion.div>
 						<Link
-							href="#contact"
+							href="#contact-me"
 							className={`btn_primary ${contactStyles.btn_primary}`}>
 							Contact Me
 							<GiPaperPlane

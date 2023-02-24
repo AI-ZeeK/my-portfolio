@@ -78,6 +78,8 @@ html {
 	--btn-text-color: #ffd294;
 	--footer-bg-color: #221400;
 	--card-bg-color: #ffc574;
+	color-scheme: only light;
+
 }
 
 body {
