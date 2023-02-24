@@ -607,49 +607,49 @@ html {
 
 :root {
   --main-bg: #fafafa;
-  --glass-bg: #73430022;
+  --glass-bg: #0073ff11;
   --placeholder-text-color: #40404088;
   --tertiary-bg: #fafafa;
   --main-text-color: #1a1a1a;
   --footer-text-color: #ffffff;
   --main-text-color2: #ffffff;
   --theme-toggle: #1a232e;
-  --accent-text-color: #b86b00;
-  --accent-text-color2: #734300;
-  --secondary-text-color2: #a04500;
+  --accent-text-color: #0073ff;
+  --accent-text-color2: #0073ff;
+  --secondary-text-color2: #006cf0;
   --bg-gradient-1: linear-gradient(
-		144deg,
-		rgb(255, 255, 255) 0%,
-		rgb(255, 245, 232) 100%
-	);
+    144deg,
+    rgb(255, 255, 255) 0%,
+    rgb(248, 251, 255) 100%
+  );
   --bg-gradient-2: linear-gradient(
-		144deg,
-		rgba(242, 242, 242, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
+    144deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   --bg-gradient-3: linear-gradient(
-		144deg,
-		rgba(255, 123, 123, 1) 0%,
-		rgba(249, 204, 65, 1) 100%
-	);
+    144deg,
+    rgba(255, 123, 123, 1) 0%,
+    rgb(132, 249, 65) 100%
+  );
   --bg-gradient-4: linear-gradient(
-		144deg,
-		rgba(114, 195, 220, 1) 0%,
-		rgba(199, 95, 196, 1) 100%
-	);
+    144deg,
+    rgba(114, 195, 220, 1) 0%,
+    rgba(199, 95, 196, 1) 100%
+  );
   --bg-gradient-5: linear-gradient(
-		144deg,
-		rgba(102, 102, 102, 1) 0%,
-		rgba(170, 170, 170, 1) 100%
-	);
-  --accent-color2: #734300;
-  --border-color: #22140067;
+    144deg,
+    rgba(102, 102, 102, 1) 0%,
+    rgba(170, 170, 170, 1) 100%
+  );
+  --accent-color2: #314154;
+  --border-color: #1a232e88;
   --shadow-color: #1a232e22;
   --border-color-2: #1a232e;
-  --nav-bg-color: #221400;
-  --btn-color: #1a1a1a;
+  --nav-bg-color: #314154;
+  --btn-color: #314154;
   --btn-text-color: #ffffff;
-  --footer-bg-color: #221400;
+  --footer-bg-color: #314154;
   --card-bg-color: #ffffff;
   color-scheme: light;
 }
@@ -671,30 +671,30 @@ body.dim {
   --secondary-text-color2: #ff5c5c;
   --secondary-text-color1: #ff5c5c;
   --bg-gradient-1: linear-gradient(
-		144deg,
-		rgba(33, 42, 53, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
-	);
+    144deg,
+    rgba(33, 42, 53, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   --bg-gradient-2: linear-gradient(
-		144deg,
-		rgba(33, 42, 53, 1) 0%,
-		rgba(43, 54, 66, 1) 100%
-	);
+    144deg,
+    rgba(33, 42, 53, 1) 0%,
+    rgba(43, 54, 66, 1) 100%
+  );
   --bg-gradient-3: linear-gradient(
-		144deg,
-		rgba(255, 92, 92, 1) 0%,
-		rgba(255, 167, 0, 1) 100%
-	);
+    144deg,
+    rgba(255, 92, 92, 1) 0%,
+    rgba(255, 167, 0, 1) 100%
+  );
   --bg-gradient-4: linear-gradient(
-		144deg,
-		rgba(71, 184, 224, 1) 0%,
-		rgba(156, 39, 176, 1) 100%
-	);
+    144deg,
+    rgba(71, 184, 224, 1) 0%,
+    rgba(156, 39, 176, 1) 100%
+  );
   --bg-gradient-5: linear-gradient(
-		144deg,
-		rgba(241, 241, 241, 1) 0%,
-		rgba(230, 230, 230, 1) 100%
-	);
+    144deg,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
   --theme-toggle: #ffffff;
   --border-color: #cccccc66;
   --shadow-color: #cccccc22;
@@ -721,34 +721,34 @@ body.black {
   --main-text-color2: var(--main-text-color);
   --secondary-text-color2: #b44e00;
   --bg-gradient-1: linear-gradient(
-		144deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(34, 34, 34, 1) 100%
-	);
+    144deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
   --bg-gradient-2: linear-gradient(
-		144deg,
-		rgba(34, 34, 34, 1) 0%,
-		rgba(51, 51, 51, 1) 100%
-	);
+    144deg,
+    rgba(34, 34, 34, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  );
   --bg-gradient-3: linear-gradient(
-		144deg,
-		rgba(255, 87, 51, 1) 0%,
-		rgba(0, 168, 204, 1) 100%
-	);
+    144deg,
+    rgba(255, 87, 51, 1) 0%,
+    rgba(0, 168, 204, 1) 100%
+  );
   --bg-gradient-4: linear-gradient(
-		144deg,
-		rgba(111, 66, 193, 1) 0%,
-		rgba(23, 162, 184, 1) 100%
-	);
+    144deg,
+    rgba(111, 66, 193, 1) 0%,
+    rgba(23, 162, 184, 1) 100%
+  );
   --bg-gradient-5: linear-gradient(
-		144deg,
-		rgba(241, 241, 241, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
+    144deg,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   --theme-toggle: #ffffff;
   --border-color: #ffd29465;
   --shadow-color: rgba(255, 219, 168, 0.2);
-  --border-color-2: rgb(255, 242, 224);
+  --border-color-2: rgb(255, 235, 207);
   --nav-bg-color: var(--main-bg);
   --accent-text-color: #734300;
   --accent-text-color2: #734300;
@@ -771,30 +771,30 @@ body.coffee {
   --main-text-color2: #ffd294;
   --secondary-text-color2: #ff6f00;
   --bg-gradient-1: linear-gradient(
-		144deg,
-		rgba(58, 34, 0, 1) 0%,
-		rgb(32, 22, 9) 100%
-	);
+    144deg,
+    rgba(58, 34, 0, 1) 0%,
+    rgb(32, 22, 9) 100%
+  );
   --bg-gradient-2: linear-gradient(
-		144deg,
-		rgb(37, 22, 0) 0%,
-		rgb(97, 57, 0) 100%
-	);
+    144deg,
+    rgb(37, 22, 0) 0%,
+    rgb(97, 57, 0) 100%
+  );
   --bg-gradient-3: linear-gradient(
-		144deg,
-		rgba(51, 51, 51, 1) 0%,
-		rgba(71, 184, 224, 1) 100%
-	);
+    144deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(71, 184, 224, 1) 100%
+  );
   --bg-gradient-4: linear-gradient(
-		144deg,
-		rgba(255, 92, 92, 1) 0%,
-		rgba(255, 167, 0, 1) 100%
-	);
+    144deg,
+    rgba(255, 92, 92, 1) 0%,
+    rgba(255, 167, 0, 1) 100%
+  );
   --bg-gradient-5: linear-gradient(
-		144deg,
-		rgba(156, 39, 176, 1) 0%,
-		rgba(71, 184, 224, 1) 100%
-	);
+    144deg,
+    rgba(156, 39, 176, 1) 0%,
+    rgba(71, 184, 224, 1) 100%
+  );
   --theme-toggle: #ffffff;
   --border-color: #ffd29488;
   --shadow-color: #ffd29422;
