@@ -7,9 +7,6 @@
 	display: grid;
 	gap: 2rem;
 
-	& > div {
-		// border:1px solid red
-	}
 
 	.contact_advert_block {
 		padding: 2rem;
@@ -136,17 +133,15 @@
 			.contact_input_box{
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
+				
 				gap: 0.2rem;
 				width: 100%;
 				padding: 0.4rem;
 				& > label {
 					font-size: 0.6rem;
 				}
-				& > input {
-
-				}
-
+				
 				.btn_primary {
 					display: flex;
 					border-radius: 8px;
