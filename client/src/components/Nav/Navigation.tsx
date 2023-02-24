@@ -48,7 +48,7 @@ const Navigation = () => {
 		return () => {
 			document.removeEventListener("click", handleOutsideClick, true);
 		};
-	}, []);
+	}, [handleOutsideClick]);
 	useEffect(() => {
 		dispatch(setTheme(currentTheme));
 	});
