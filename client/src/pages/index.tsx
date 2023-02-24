@@ -26,7 +26,7 @@ export default function Home() {
 					content="Isaac, Tubonibo, Portfolio, Website, Full-stack, developer, full, stack, web3, React, Redux, Next, Next.js, Node.js, Nigerian, Programmer, Developer, Blockchain, Solidity, Front, Front-en, Frontend, Fullstack"
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="color-scheme" content="dark light" prefers-color-scheme='light' />
 				<link rel="icon" href="/AiZeek.png" />
 			</Head>
 			<div>
