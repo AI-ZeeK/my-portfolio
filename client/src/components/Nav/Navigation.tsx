@@ -136,6 +136,8 @@ const Navigation = () => {
 						name="theme"
 						id="black"
 						value="black"
+						className={`${navStyles.radio}`}
+
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
@@ -148,6 +150,8 @@ const Navigation = () => {
 						name="theme"
 						id="dim"
 						value="dim"
+						className={`${navStyles.radio}`}
+
 					/>
 				</div>
 				<div className={`${navStyles.select_block}`}>
@@ -160,6 +164,8 @@ const Navigation = () => {
 						name="theme"
 						id="coffee"
 						value="coffee"
+						className={`${navStyles.radio}`}
+
 					/>
 				</div>
 
@@ -173,6 +179,7 @@ const Navigation = () => {
 						name="theme"
 						id="light"
 						value="light"
+						className={`${navStyles.radio}`}
 					/>
 				</div>
 			</div>
