@@ -218,11 +218,6 @@
       top: 0.5rem;
       left: 1rem;
       z-index: 40;
-      .nav_logo_image {
-      }
-      .nav_logo_text {
-        // display: none;
-      }
     }
     .nav_links_block {
       display: flex;
@@ -236,6 +231,7 @@
       padding: 0.4rem 0.8rem;
       z-index: -10;
       transition: all 200ms ease, background-color 200ms ease-in;
+      overflow: hidden;
       .nav_logo_image {
         position: fixed;
         top: 0.5rem;
@@ -257,7 +253,6 @@
         padding: 0.4rem;
         gap: 0.6rem;
         font-weight: 400;
-        overflow: hidden;
         // border: 1px solid forestgreen;
 
         & > span {
@@ -273,8 +268,8 @@
           &::before {
             content: "";
             position: absolute;
-            top: -12px;
-            left: -13px;
+            top: -28px;
+            left: -28px;
             scale: 0.8;
             width: 5rem;
             height: 5rem;
@@ -283,7 +278,7 @@
           }
           &:active::before {
             scale: 1;
-            background-color: var(--border-color);
+            background-color: var(--glass-bg);
           }
         }
       }

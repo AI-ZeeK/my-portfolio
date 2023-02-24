@@ -116,7 +116,7 @@ const appSlice = createSlice({
       }
     },
     setFormData: (state, { payload }) => {
-      state.formData = {};
+      state.formData = payload;
     },
   },
 });

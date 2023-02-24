@@ -13,6 +13,7 @@ import {
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { setFormData } from "@/Redux-actions/AppSlice";
+import { sendContactForm } from "@/lib/api";
 
 const phoneImage = "/phone214.jpg";
 const Contact = () => {
@@ -21,7 +22,16 @@ const Contact = () => {
   const dispatch = useDispatch();
 
   const handleDataChange = (e: any) => {
-    // setFormData()?
+    dispatch(
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      })
+    );
+  };
+  const handleFormSubmit = async (e: any) => {
+    e.preventDefault();
+    await sendContactForm(formData);
   };
 
   return (
@@ -87,6 +97,7 @@ const Contact = () => {
           ))}
         </motion.div>
         <motion.form
+          onSubmit={handleFormSubmit}
           variants={fadeIn("left", "tween", 0, 1)}
           whileInView="show"
           initial="hidden"
@@ -132,6 +143,7 @@ const Contact = () => {
           <div
             className={`${contactStyles.contact_input_box} ${contactStyles.btn_box}`}>
             <button
+              disabled={!formData.name || !formData.email || !formData.message}
               type="submit"
               className={`btn_primary ${contactStyles.btn_primary}`}>
               Send Message

@@ -1,4 +1,6 @@
 @use "./abstracts/media-query" as *;
+// $bgColor: var(--btn-color);
+$bgColor: red;
 
 .contact_block {
   padding-block: 4rem;
@@ -118,11 +120,11 @@
     .contact_input_block {
       display: flex;
       flex-direction: column;
-      padding: 1rem 2rem;
+      padding: 1rem;
       gap: 1rem;
       align-items: center;
       justify-content: center;
-      padding-block: 3rem;
+      padding-block: 2rem;
       width: 100%;
       border-radius: 8px;
       background: var(--glass-bg);
@@ -160,7 +162,7 @@
           }
 
           &:hover {
-            width: 11rem;
+            background-color: lighten($bgColor, 30%);
             .icon {
               transform: translateX(0.4rem);
             }
@@ -256,7 +258,7 @@
       grid-template-columns: 1fr !important;
       gap: 01rem;
       padding-block: 1rem;
-      padding-inline: 2rem;
+      padding-inline: 0.2rem;
       .contact_info_block {
         align-items: center;
         justify-content: flex-start !important;
