@@ -10,6 +10,8 @@ import {
 	staggerContainer,
 	zoomIn,
 } from "@/utils/motion";
+import { IoLogoWhatsapp } from "react-icons/io5";
+
 const phoneImage = "/phone214.jpg";
 const Contact = () => {
 	return (
@@ -74,7 +76,7 @@ const Contact = () => {
 						</div>
 					))}
 				</motion.div>
-				<motion.div
+				<motion.form
 					variants={fadeIn("left", "tween", 0, 1)}
 					whileInView="show"
 					initial="hidden"
@@ -104,7 +106,26 @@ const Contact = () => {
 							cols={2}
 							placeholder="Your message"></textarea>
 					</div>
-				</motion.div>
+					<div className={`${contactStyles.contact_input_box}`}>
+						<button
+							type='submit'
+							className={`btn_primary ${contactStyles.btn_primary}`}>
+							Send Message
+							<GiPaperPlane
+								className={`text-[1.4rem] transition ${contactStyles.icon}`}
+							/>
+						</button>
+					</div>
+					<div className={`${contactStyles.contact_input_box}`}>
+						<button
+							className={`btn_primary ${contactStyles.btn_primary}`}>
+							Whatsapp
+							<IoLogoWhatsapp
+								className={`text-[1.4rem] transition ${contactStyles.icon}`}
+							/>
+						</button>
+					</div>
+				</motion.form>
 			</div>
 		</div>
 	);

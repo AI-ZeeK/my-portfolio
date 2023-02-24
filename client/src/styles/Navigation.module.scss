@@ -257,6 +257,7 @@
 				padding: 0.4rem;
 				gap: 0.6rem;
 				font-weight: 400;
+				overflow: hidden;
 				// border: 1px solid forestgreen;
 
 				& > span {
@@ -275,8 +276,8 @@
 						top: -12px;
 						left: -13px;
 						scale: 0.8;
-						width: 3rem;
-						height: 3rem;
+						width: 5rem;
+						height: 5rem;
 						border-radius: 50%;
 						transition: 200ms ease;
 					}

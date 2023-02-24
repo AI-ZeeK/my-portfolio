@@ -136,6 +136,7 @@
 			.contact_input_box{
 				display: flex;
 				flex-direction: column;
+				align-items: center;
 				gap: 0.2rem;
 				width: 100%;
 				padding: 0.4rem;
@@ -144,6 +145,37 @@
 				}
 				& > input {
 
+				}
+
+				.btn_primary {
+					display: flex;
+					border-radius: 8px;
+					white-space: nowrap;
+					width: 11rem;
+					height: 3.4rem;
+					gap: 0.4rem;
+					align-items: center;
+					justify-content: center;
+					font-size: 1rem;
+					padding: 1rem;
+					background-color: var(--btn-color);
+					border: 1px solid var(--btn-color);
+					color: var(--btn-text-color);
+					transition: all 300ms ease;
+					cursor: pointer;
+					.icon {
+						transition: 400ms ease;
+					}
+		
+					&:hover {
+						width: 11.8rem;
+						.icon {
+							transform: translateX(0.4rem);
+						}
+					}
+					&:active {
+						transform: scale(0.99);
+					}
 				}
 
 			}

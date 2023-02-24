@@ -606,11 +606,11 @@ html {
 }
 
 :root {
-  --main-bg: #ffd294;
+  --main-bg: #fafafa;
   --glass-bg: #73430022;
-  --tertiary-bg: #ffffff;
+  --tertiary-bg: #fafafa;
   --main-text-color: #1a1a1a;
-  --footer-text-color: #ffd294;
+  --footer-text-color: #ffffff;
   --main-text-color2: #ffd294;
   --theme-toggle: #1a232e;
   --accent-text-color: #b86b00;
@@ -618,8 +618,8 @@ html {
   --secondary-text-color2: #a04500;
   --bg-gradient-1: linear-gradient(
 		144deg,
-		rgb(255, 222, 176) 0%,
-		rgb(255, 185, 87) 100%
+		rgb(255, 255, 255) 0%,
+		rgb(255, 245, 232) 100%
 	);
   --bg-gradient-2: linear-gradient(
 		144deg,
@@ -647,10 +647,10 @@ html {
   --border-color-2: #1a232e;
   --nav-bg-color: #221400;
   --btn-color: #1a1a1a;
-  --btn-text-color: #ffd294;
+  --btn-text-color: #ffffff;
   --footer-bg-color: #221400;
-  --card-bg-color: #ffc574;
-  color-scheme:  light;
+  --card-bg-color: #ffffff;
+  color-scheme: light;
 }
 
 body {
@@ -661,7 +661,7 @@ body {
 
 body.dim {
   --main-bg: #1a232e;
-  --glass-bg: #1a232e22;
+  --glass-bg: #ffd29422;
   --tertiary-bg: #2b3642;
   --main-text-color: #ffffff;
   --footer-text-color: #ffffff;
@@ -760,7 +760,7 @@ body.black {
 body.coffee {
   --main-bg: #3a2200;
   --tertiary-bg: #333333;
-  --glass-bg: #3a220022;
+  --glass-bg: #ffd29422;
   --btn-text-color: #ffd294;
   --main-text-color: #ffd294;
   --footer-text-color: #ffd294;
@@ -812,7 +812,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 

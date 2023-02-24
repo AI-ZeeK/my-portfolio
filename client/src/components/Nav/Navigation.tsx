@@ -5,10 +5,7 @@ import {
 	MdOutlinePalette,
 	MdPalette,
 } from "react-icons/md";
-import {
-	HiSparkles,
-	HiOutlineSparkles,
-} from "react-icons/hi";
+import { HiSparkles, HiOutlineSparkles } from "react-icons/hi";
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
@@ -41,24 +38,26 @@ const Navigation = () => {
 	const handleThemeToggle = () => {
 		dispatch(setThemeToggle());
 	};
-	const handleOutsideClick = (e: any) => {
-		if (!themeBarRef.current.contains(e.target)) {
-			dispatch(setCloseThemeBar());
-		}
-		return;
-	};
+
 	const themeBarRef: any = useRef(null);
 	useEffect(() => {
+		const handleOutsideClick = (e: any) => {
+			if (!themeBarRef.current.contains(e.target)) {
+				dispatch(setCloseThemeBar());
+			}
+			return;
+		};
 		document.addEventListener("click", handleOutsideClick, true);
 
 		return () => {
 			document.removeEventListener("click", handleOutsideClick, true);
 		};
-	}, [handleOutsideClick]);
+	}, [dispatch]);
+
 	useEffect(() => {
 		dispatch(setTheme(currentTheme));
 	});
-	
+
 	return (
 		<nav
 			className={`${navStyles.nav_block} ${
