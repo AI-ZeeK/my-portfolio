@@ -16,8 +16,8 @@ export interface CounterState {
 	navData: any[];
 	currentTheme: string;
 	isChecked: boolean;
-	skillshead: [],
-	stackhead: []
+	skillshead: any[],
+	stackhead: any[]
 }
 
 const initialState: CounterState = {

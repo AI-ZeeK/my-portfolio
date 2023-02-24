@@ -13,8 +13,8 @@
 }
 
 .home__container {
-	flex-wrap: 1rem;
 	padding-top: 1rem;
+	padding-bottom: 2rem;
 }
 .home__content {
 	display: grid;
@@ -211,7 +211,7 @@
 			padding: 0.2rem;
 
 			.home__social_icon {
-				font-size: 2.4rem !important;
+				font-size: 2rem !important;
 			}
 		}
 	
