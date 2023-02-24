@@ -432,7 +432,7 @@ input[type="radio"] {
 	+ .radio_label {
 		&:before {
 			content: "";
-			background: white
+			background: white;
 			border-radius: 100%;
 			border: 1px solid var(--border-color);
 			display: inline-block;
