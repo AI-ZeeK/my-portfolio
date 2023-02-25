@@ -56,6 +56,13 @@ const Contact = () => {
 
     setTimeout(() => {
       dispatch(setFormSent());
+      dispatch(
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        })
+      );
     }, 2000);
 
     console.log(res);
