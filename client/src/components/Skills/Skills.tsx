@@ -6,14 +6,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleSkillsBox } from "../../Redux-actions/AppSlice";
 import { fadeIn } from "@/utils/motion";
 
-const Skills = () => {
+const Skills = ({ targetRef }: any) => {
   const { skillshead } = useSelector((store: any) => store.app);
   const dispatch = useDispatch();
   const handleToggleSkills = (selectId: string) => {
     dispatch(toggleSkillsBox(selectId));
   };
   return (
-    <div id="skills" className={`${skillsStyle.skills_section}`}>
+    <div
+      ref={targetRef}
+      id="skills"
+      className={`${skillsStyle.skills_section}`}>
       <motion.div className={`${skillsStyle.skills_head_box}`}>
         <h1 className={`${skillsStyle.skills_head}`}>Skills</h1>
         <p className={`${skillsStyle.skills_desc}`}>My technical level</p>

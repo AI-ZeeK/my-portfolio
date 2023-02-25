@@ -9,10 +9,16 @@ import Footer from "@/components/Footer";
 import Contact from "../components/contact/Contact";
 import About from "@/components/about/About";
 import Portfolio from "@/components/portfolio/Portfolio";
-
+import { useEffect, useMemo, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { setNavObserveSelect } from "@/Redux-actions/AppSlice";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  // if (currentTarget) observer.observe(currentTarget);
+  // return () => {
+  //   if (currentTarget) observer.observe(currentTarget);
+  // };
   return (
     <>
       <Head>

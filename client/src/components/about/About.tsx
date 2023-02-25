@@ -32,9 +32,13 @@ const About = () => {
         <div className={`${aboutStyle.about_info_block}`}>
           <div className={`${aboutStyle.about_info_box}`}>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque dolor voluptate ea dolorem aliquid modi placeat
-              deleniti repudiandae praesentium mollitia.{" "}
+              I am committed to delivering solutions that are not only
+              functional and user-friendly, but also scalable and efficient.
+              <br /> In addition to my technical skills, I am always eager to
+              learn and explore new possibilities. I am dedicated to staying
+              up-to-date with the latest trends and advancements in the
+              industry, and I consistently research and grow my knowledge to
+              deliver solutions that meet the needs of stakeholders.
             </p>
           </div>
           <div className={`${aboutStyle.about_info_box}`}>

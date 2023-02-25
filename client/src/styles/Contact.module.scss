@@ -29,7 +29,7 @@ $bgColor: red;
         text-align: center;
       }
       & > p {
-        text-align: justify;
+        text-align: center;
       }
       .btn_primary {
         display: flex;
@@ -99,6 +99,8 @@ $bgColor: red;
     align-items: center;
     gap: 1rem;
     padding-block: 1rem;
+
+    overflow: hidden;
     .contact_info_block {
       display: grid;
       gap: 1rem;
@@ -259,7 +261,8 @@ $bgColor: red;
     }
 
     .contact_bottom_block {
-      grid-template-columns: 1fr !important;
+      display: flex !important;
+      flex-direction: column;
       gap: 01rem;
       padding-block: 1rem;
       padding-inline: 0.2rem;

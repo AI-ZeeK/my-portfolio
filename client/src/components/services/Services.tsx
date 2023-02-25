@@ -19,7 +19,9 @@ const Services = () => {
         <p className={`${serviceStyle.service_desc}`}>What i offer</p>
       </motion.div>
       <motion.div className={serviceStyle.service_card_block}>
-        {Principles.sort((a, b) => (a.type < b.type ? -1 : 1)).map((item) => (
+        {Principles.sort((a, b) =>
+          a.type.toLowerCase() < b.type.toLowerCase() ? -1 : 1
+        ).map((item) => (
           <motion.div key={item.id} className={`${serviceStyle.service_card}`}>
             <motion.h1 className={`${serviceStyle.card_desc}`}>
               {item.type}
@@ -31,8 +33,7 @@ const Services = () => {
             </div>
             <div className={`${serviceStyle.line_through}`} />
             <motion.div className={`${serviceStyle.service_info}`}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              nihil ab? Quos quibusdam ex facere corrupti quidem numquam.
+              {item.desc}
             </motion.div>
           </motion.div>
         ))}

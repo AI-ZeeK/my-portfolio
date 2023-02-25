@@ -74,7 +74,18 @@ const appSlice = createSlice({
           : { ...item, state: false };
       });
       state.navData = X;
-      console.log("greeen", state.navData, payload, X);
+    },
+    setNavObserveSelect: (state, { payload }) => {
+      // const navItem = state.navData.find((item) => item.id === payload);
+      // navItem.state = navItem ? !navItem.state : false;
+
+      const X = state.navData.map((item) => {
+        return item.head.toLowerCase() === payload.toLowerCase()
+          ? { ...item, state: true }
+          : { ...item, state: false };
+      });
+      state.navData = X;
+      console.log("greeen", payload);
     },
     toggleSkillsBox: (state, { payload }) => {
       // const navItem = state.navData.find((item) => item.id === payload);
@@ -147,6 +158,7 @@ export const {
   setFormBtnAble,
   setFormSent,
   setFormSend,
+  setNavObserveSelect,
 } = appSlice.actions;
 
 export default appSlice.reducer;
