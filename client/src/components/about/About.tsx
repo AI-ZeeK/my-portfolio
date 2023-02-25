@@ -23,8 +23,8 @@ const About = () => {
         <div className={`${aboutStyle.about_image}`}>
           <Image
             className={`${aboutStyle.img}`}
-            width={200}
-            height={200}
+            width={860}
+            height={860}
             alt="alternate"
             src={aboutImage}
           />
