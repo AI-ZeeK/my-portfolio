@@ -128,6 +128,13 @@ $bgColor: red;
       width: 100%;
       border-radius: 8px;
       background: var(--glass-bg);
+      .btn_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        //   align-items: ju;
+        justify-content: space-between;
+      }
       // border: 1px solid red;
       .contact_input_box {
         display: flex;
