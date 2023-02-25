@@ -12,12 +12,20 @@ import {
 } from "@/utils/motion";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-import { setFormData } from "@/Redux-actions/AppSlice";
+import {
+  setFormBtnAble,
+  setFormData,
+  setFormSend,
+  setFormSent,
+} from "@/Redux-actions/AppSlice";
 import { sendContactForm } from "@/lib/api";
+import Loading from "../Loading";
 
 const phoneImage = "/phone214.jpg";
 const Contact = () => {
-  const { formData } = useSelector((store: any) => store.app);
+  const { formData, formSent, formBtnAble } = useSelector(
+    (store: any) => store.app
+  );
 
   const dispatch = useDispatch();
 
@@ -28,10 +36,29 @@ const Contact = () => {
         [e.target.name]: e.target.value,
       })
     );
+    if (!formData.name || !formData.email || !formData.message) {
+      dispatch(setFormBtnAble());
+    }
+  };
+  const handleFormBtnClick = () => {
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("form input empty");
+    }
   };
   const handleFormSubmit = async (e: any) => {
     e.preventDefault();
-    await sendContactForm(formData);
+
+    dispatch(setFormSend());
+    const res = await sendContactForm(formData);
+    setTimeout(() => {
+      alert("Email Sent");
+    }, 1500);
+
+    setTimeout(() => {
+      dispatch(setFormSent());
+    }, 2000);
+
+    console.log(res);
   };
 
   return (
@@ -143,13 +170,20 @@ const Contact = () => {
           <div
             className={`${contactStyles.contact_input_box} ${contactStyles.btn_box}`}>
             <button
-              disabled={!formData.name || !formData.email || !formData.message}
+              onClick={handleFormBtnClick}
+              disabled={formBtnAble}
               type="submit"
               className={`btn_primary ${contactStyles.btn_primary}`}>
-              Send Message
-              <GiPaperPlane
-                className={`text-[1.4rem] transition ${contactStyles.icon}`}
-              />
+              {formSent ? (
+                <Loading />
+              ) : (
+                <>
+                  Send Message
+                  <GiPaperPlane
+                    className={`text-[1.4rem] transition ${contactStyles.icon}`}
+                  />
+                </>
+              )}
             </button>
             <button className={`btn_primary ${contactStyles.btn_primary}`}>
               Whatsapp

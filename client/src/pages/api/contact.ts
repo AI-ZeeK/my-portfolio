@@ -5,6 +5,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 type Data = {
   message?: string;
   success?: boolean;
+  new?: string;
 };
 
 const contactMessageFields = {
@@ -29,9 +30,9 @@ export default async function handler(
         text: `${formData.message}`,
         html: `<h1>${formData.name}</h1> <h2>${formData.email}</h2><p>${formData.message}</p> `,
       });
-      return res.status(400).json({ success: true });
+      return res.status(201).json({ success: true });
     } catch (error: any) {
-      console.log(error);
+      console.log(error, "eroororor");
       return res.status(400).json({ message: error.message });
     }
   }

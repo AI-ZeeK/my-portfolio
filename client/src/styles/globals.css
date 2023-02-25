@@ -515,12 +515,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .relative{
   position: relative;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
 }
 
 .mt-\[8px\]{
@@ -539,6 +555,28 @@ video {
   display: none;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin{
+  animation: spin 1s linear infinite;
+}
+
+.fill-blue-600{
+  fill: #2563eb;
+}
+
 .text-\[1\.4rem\]{
   font-size: 1.4rem;
 }
@@ -549,6 +587,11 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -648,6 +691,7 @@ html {
   --border-color-2: #1a232e;
   --nav-bg-color: #314154;
   --btn-color: #314154;
+  --btn-hover-color: #425670;
   --btn-text-color: #ffffff;
   --footer-bg-color: #314154;
   --card-bg-color: #ffffff;
@@ -705,6 +749,7 @@ body.dim {
   --accent-color2: #0073ff;
   --btn-text-color: #ffffff;
   --btn-color: #0073ff;
+  --btn-hover-color: #1980ff;
   --footer-bg-color: #000;
   --card-bg-color: #222d3b;
   background-color: var(--main-bg);
@@ -754,7 +799,7 @@ body.black {
   --accent-text-color2: #734300;
   --accent-color2: #b86b00;
   --btn-color: #5a3500;
-  --btn-hover-color: #42baff;
+  --btn-hover-color: #714200;
   --footer-bg-color: #000;
   --card-bg-color: #1a1a1a;
   background-color: var(--main-bg);
@@ -804,6 +849,7 @@ body.coffee {
   --accent-text-color2: #ff6f00;
   --accent-color2: #b86b00;
   --btn-color: #1a1a1a;
+  --btn-hover-color: #313131;
   --footer-bg-color: #1a1a1a;
   --card-bg-color: #4b2c01;
   background-color: var(--main-bg);
@@ -844,6 +890,19 @@ li {
   width: 100%;
   height: 1px;
   background: var(--bg-gradient-3);
+}
+
+button:disabled {
+  background-color: grey !important;
+  color: rgb(221, 221, 221) !important;
+  border-color: grey !important;
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:text-gray-600{
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 768px){

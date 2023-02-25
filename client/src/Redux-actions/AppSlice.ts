@@ -19,6 +19,8 @@ export interface CounterState {
   skillshead: any[];
   stackhead: any[];
   formData: object;
+  formSent: boolean;
+  formBtnAble: boolean;
 }
 
 const initialState: CounterState = {
@@ -34,6 +36,8 @@ const initialState: CounterState = {
     email: "",
     message: "",
   },
+  formSent: false,
+  formBtnAble: true,
 };
 
 const appSlice = createSlice({
@@ -118,6 +122,15 @@ const appSlice = createSlice({
     setFormData: (state, { payload }) => {
       state.formData = payload;
     },
+    setFormSend: (state) => {
+      state.formSent = true;
+    },
+    setFormSent: (state) => {
+      state.formSent = false;
+    },
+    setFormBtnAble: (state) => {
+      state.formBtnAble = false;
+    },
   },
 });
 
@@ -131,6 +144,9 @@ export const {
   setIsChecked,
   toggleSkillsBox,
   setFormData,
+  setFormBtnAble,
+  setFormSent,
+  setFormSend,
 } = appSlice.actions;
 
 export default appSlice.reducer;

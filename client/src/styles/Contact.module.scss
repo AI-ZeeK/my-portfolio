@@ -162,10 +162,7 @@ $bgColor: red;
           }
 
           &:hover {
-            background-color: lighten($bgColor, 30%);
-            .icon {
-              transform: translateX(0.4rem);
-            }
+            background-color: var(--btn-hover-color);
           }
           &:active {
             transform: scale(0.99);
