@@ -1,5 +1,5 @@
 export const sendContactForm = async (data: object) =>
-  fetch("/api/contact", {
+  fetch("https://my-portfolio-ai-zeek.vercel.app/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
