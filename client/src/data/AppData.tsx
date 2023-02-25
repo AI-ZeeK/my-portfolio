@@ -86,7 +86,7 @@ export const NavData = [
   {
     id: "444cc3c4",
     state: false,
-    head: "Service",
+    head: "Services",
     icon1: <RiSuitcaseLine />,
     icon2: <RiSuitcaseFill />,
   },

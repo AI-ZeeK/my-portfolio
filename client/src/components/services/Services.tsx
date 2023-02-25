@@ -13,7 +13,7 @@ import {
 
 const Services = () => {
   return (
-    <motion.section id="service" className={`${serviceStyle.service_section}`}>
+    <motion.section id="services" className={`${serviceStyle.service_section}`}>
       <motion.div className={`${serviceStyle.service_head_box}`}>
         <h1 className={`${serviceStyle.service_head}`}>Services</h1>
         <p className={`${serviceStyle.service_desc}`}>What i offer</p>

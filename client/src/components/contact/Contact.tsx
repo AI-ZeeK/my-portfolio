@@ -185,12 +185,15 @@ const Contact = () => {
                 </>
               )}
             </button>
-            <button className={`btn_primary ${contactStyles.btn_primary}`}>
+            <Link
+              target="_blank"
+              href={`https://api.whatsapp.com/send/?phone=2348129405476&text&type=phone_number&app_absent=0`}
+              className={`btn_primary ${contactStyles.btn_primary}`}>
               Whatsapp
               <IoLogoWhatsapp
                 className={`text-[1.4rem] transition ${contactStyles.icon}`}
               />
-            </button>
+            </Link>
           </div>
         </motion.form>
       </div>
