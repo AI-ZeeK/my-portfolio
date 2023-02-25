@@ -22,17 +22,38 @@ const Services = () => {
         {Principles.sort((a, b) =>
           a.type.toLowerCase() < b.type.toLowerCase() ? -1 : 1
         ).map((item) => (
-          <motion.div key={item.id} className={`${serviceStyle.service_card}`}>
-            <motion.h1 className={`${serviceStyle.card_desc}`}>
+          <motion.div
+            variants={zoomIn(0, 1)}
+            whileInView="show"
+            initial="hidden"
+            viewport={{ once: false, amount: 0.25 }}
+            key={item.id}
+            className={`${serviceStyle.service_card}`}>
+            <motion.h1
+              variants={fadeIn("up", "tween", 0.6, 1)}
+              whileInView="show"
+              initial="hidden"
+              viewport={{ once: false, amount: 0.25 }}
+              className={`${serviceStyle.card_desc}`}>
               {item.type}
             </motion.h1>
             <div className={`${serviceStyle.card_icon_box}`}>
-              <motion.span className={`${serviceStyle.card_icon}`}>
+              <motion.span
+                variants={fadeIn("right", "tween", 0.6, 1)}
+                whileInView="show"
+                initial="hidden"
+                viewport={{ once: false, amount: 0.25 }}
+                className={`${serviceStyle.card_icon}`}>
                 {item?.icon}
               </motion.span>
             </div>
             <div className={`${serviceStyle.line_through}`} />
-            <motion.div className={`${serviceStyle.service_info}`}>
+            <motion.div
+              variants={fadeIn("down", "tween", 0.6, 1)}
+              whileInView="show"
+              initial="hidden"
+              viewport={{ once: false, amount: 0.25 }}
+              className={`${serviceStyle.service_info}`}>
               {item.desc}
             </motion.div>
           </motion.div>
