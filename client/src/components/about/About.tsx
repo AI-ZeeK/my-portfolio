@@ -15,7 +15,7 @@ const About = () => {
         <p className={`${aboutStyle.about_desc}`}>My Introduction</p>
       </motion.div>
       <motion.div
-        variants={fadeIn("left", "tween", 0, 1)}
+        variants={fadeIn("left", "tween", 0, 0.5)}
         whileInView="show"
         initial="hidden"
         viewport={{ once: false, amount: 0.05 }}

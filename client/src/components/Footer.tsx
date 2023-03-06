@@ -18,7 +18,7 @@ const Footer = () => {
       <motion.div className={footerStyle.footer_top}>
         <div className={footerStyle.footer_top_head}>
           <motion.div
-            variants={fadeIn("left", "tween", 0, 1)}
+            variants={fadeIn("left", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}
@@ -32,7 +32,7 @@ const Footer = () => {
             />
           </motion.div>
           <motion.div
-            variants={fadeIn("right", "tween", 0, 1)}
+            variants={fadeIn("right", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}
@@ -50,28 +50,28 @@ const Footer = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={footerStyle.footer_top_links}>
           <motion.li
-            variants={fadeIn("left", "tween", 0, 1)}
+            variants={fadeIn("left", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>
             <Link href={`#home`}>Home</Link>
           </motion.li>
           <motion.li
-            variants={fadeIn("left", "tween", 0, 1)}
+            variants={fadeIn("left", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>
             <Link href={`#portfolio`}>Portfolio</Link>
           </motion.li>
           <motion.li
-            variants={fadeIn("left", "tween", 0, 1)}
+            variants={fadeIn("left", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>
             <Link href={`#services`}>Services</Link>
           </motion.li>
           <motion.li
-            variants={fadeIn("left", "tween", 0, 1)}
+            variants={fadeIn("left", "tween", 0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>

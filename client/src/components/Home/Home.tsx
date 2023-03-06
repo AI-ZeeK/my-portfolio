@@ -18,7 +18,7 @@ const HomePage = ({ targetRef }: any) => {
         <div className={`${homeStyles.home__content} `}>
           <aside className={`${homeStyles.home__social}`}>
             <motion.div
-              variants={slideIn("left", "tween", 0, 1)}
+              variants={slideIn("left", "tween", 0, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}>
@@ -30,7 +30,7 @@ const HomePage = ({ targetRef }: any) => {
               </Link>
             </motion.div>
             <motion.div
-              variants={slideIn("left", "tween", 0.1, 1)}
+              variants={slideIn("left", "tween", 0.1, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}>
@@ -44,7 +44,7 @@ const HomePage = ({ targetRef }: any) => {
           </aside>
           {/* <div className={`relative ${homeStyles.home_img_box}`}> */}
           <motion.div
-            variants={fadeIn("left", "tween", 0.2, 1)}
+            variants={fadeIn("left", "tween", 0.2, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}
@@ -113,7 +113,7 @@ const HomePage = ({ targetRef }: any) => {
             viewport={{ once: false, amount: 0.25 }}
             className={`${homeStyles.home__data}`}>
             <motion.h1
-              variants={fadeIn("up", "tween", 0, 1)}
+              variants={fadeIn("up", "tween", 0, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}
@@ -127,7 +127,7 @@ const HomePage = ({ targetRef }: any) => {
             />
 
             <motion.p
-              variants={fadeIn("down", "tween", 0, 1)}
+              variants={fadeIn("down", "tween", 0, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}
@@ -142,7 +142,7 @@ const HomePage = ({ targetRef }: any) => {
               technology.
             </motion.p>
             <motion.div
-              variants={fadeIn("left", "tween", 0, 1.4)}
+              variants={fadeIn("left", "tween", 0, 0.7)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}>

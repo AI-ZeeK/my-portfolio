@@ -23,14 +23,14 @@ const Services = () => {
           a.type.toLowerCase() < b.type.toLowerCase() ? -1 : 1
         ).map((item) => (
           <motion.div
-            variants={zoomIn(0, 1)}
+            variants={zoomIn(0, 0.5)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}
             key={item.id}
             className={`${serviceStyle.service_card}`}>
             <motion.h1
-              variants={fadeIn("up", "tween", 0.6, 1)}
+              variants={fadeIn("up", "tween", 0.6, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}
@@ -39,7 +39,7 @@ const Services = () => {
             </motion.h1>
             <div className={`${serviceStyle.card_icon_box}`}>
               <motion.span
-                variants={fadeIn("right", "tween", 0.6, 1)}
+                variants={fadeIn("right", "tween", 0.6, 0.5)}
                 whileInView="show"
                 initial="hidden"
                 viewport={{ once: false, amount: 0.25 }}
@@ -49,7 +49,7 @@ const Services = () => {
             </div>
             <div className={`${serviceStyle.line_through}`} />
             <motion.div
-              variants={fadeIn("down", "tween", 0.6, 1)}
+              variants={fadeIn("down", "tween", 0.6, 0.5)}
               whileInView="show"
               initial="hidden"
               viewport={{ once: false, amount: 0.25 }}

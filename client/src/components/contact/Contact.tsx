@@ -72,7 +72,7 @@ const Contact = () => {
     <div className={`${contactStyles.contact_block}`}>
       <motion.div className={`${contactStyles.contact_advert_block}`}>
         <motion.div
-          variants={fadeIn("left", "tween", 0, 1)}
+          variants={fadeIn("left", "tween", 0, 0.5)}
           whileInView="show"
           initial="hidden"
           viewport={{ once: false, amount: 0.25 }}
@@ -93,7 +93,7 @@ const Contact = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          variants={fadeIn("right", "tween", 0, 1)}
+          variants={fadeIn("right", "tween", 0, 0.5)}
           whileInView="show"
           initial="hidden"
           viewport={{ once: false, amount: 0.25 }}
@@ -113,7 +113,7 @@ const Contact = () => {
       </div>
       <div className={`${contactStyles.contact_bottom_block}`}>
         <motion.div
-          variants={fadeIn("right", "tween", 0, 1)}
+          variants={fadeIn("right", "tween", 0, 0.5)}
           whileInView="show"
           initial="hidden"
           viewport={{ once: false, amount: 0.25 }}
@@ -132,7 +132,7 @@ const Contact = () => {
         </motion.div>
         <motion.form
           onSubmit={handleFormSubmit}
-          variants={fadeIn("left", "tween", 0, 1)}
+          variants={fadeIn("left", "tween", 0, 0.5)}
           whileInView="show"
           initial="hidden"
           viewport={{ once: false, amount: 0.25 }}

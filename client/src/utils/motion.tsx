@@ -14,7 +14,7 @@ export const navVariants = {
 		transition: {
 			type: "spring",
 			stiffness: 80,
-			delay: 1,
+			delay: 0.5,
 		},
 	},
 };
@@ -59,7 +59,7 @@ export const textVariant = (delay: any) => ({
 		opacity: 1,
 		transition: {
 			type: "spring",
-			duration: 1.25,
+			duration: 0.7,
 			delay,
 		},
 	},
@@ -121,7 +121,7 @@ export const planetVariants = (direction : any) => ({
 		opacity: 1,
 		transition: {
 			type: "spring",
-			duration: 1.8,
+			duration: 0.9,
 			delay: 0.1,
 		},
 	},
