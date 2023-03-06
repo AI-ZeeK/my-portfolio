@@ -422,3 +422,36 @@ export const contactMe = [
     icon: <IoLocation />,
   },
 ];
+
+export const projects = [ {
+  id: "1e3fb0c107f2",
+  state: false,
+  img: '' ,
+  head: '' ,
+  desc: "Postman",
+  stack: [ html ],
+},
+{
+  id: "1e0gb0c107f2",
+  state: false,
+  desc: "VsCode",
+  img: vscode,
+},
+{
+  id: "1e0gb067f07f2",
+  state: false,
+  desc: "Google Analytics",
+  img: googleanalytics,
+},
+{
+  id: "1e0gb069p07f2",
+  state: false,
+  desc: "MS Word",
+  img: word,
+},
+{
+  id: "1e0gb069p12f2",
+  state: false,
+  desc: "Stripe",
+  img: stripe,
+},]
