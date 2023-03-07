@@ -59,6 +59,8 @@ const materialui = "/material-ui.svg";
 const word = "/word-1.svg";
 const stripe = "/stripe-4.svg";
 const ethers = "/download.png";
+const jest = "/jest-2.svg";
+const apolloGraphQl = "/apollo-graphql-1.svg";
 
 export const NavData = [
 	{
@@ -188,6 +190,18 @@ export const TechStack = [
 				state: false,
 				desc: "Framer Motion",
 				img: framer,
+			},
+			{
+				id: "Po171d78j9a3",
+				state: false,
+				desc: "Jest",
+				img: jest,
+			},
+			{
+				id: "Po17i978j9a3",
+				state: false,
+				desc: "Apollo Graphql",
+				img: apolloGraphQl,
 			},
 		],
 	},
@@ -436,10 +450,18 @@ export const projects = [
 	{
 		id: "1edg7b0c107f2",
 		state: false,
-		img: "/portfolio/proj13.jpeg",
-		head: "Boutique Landing Page",
-		weblink: "null",
+		img: "/portfolio/Web3-transfer.png",
+		head: "Web3 Transaction App",
+		weblink: null,
 		githublink: "",
-		stack: ["react", "framer", "css"],
+		stack: [
+			"React",
+			"Tailwind CSS",
+			"CSS",
+			"Solidity",
+			"Hardhat",
+			"EthersJS",
+			"Vite",
+		],
 	},
 ];
