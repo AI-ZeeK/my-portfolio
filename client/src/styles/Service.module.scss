@@ -77,16 +77,19 @@
 			// transform: translateY(8rem);
 			background: var(--glass-bg2);
 			backdrop-filter: blur(10px);
-
+			padding: 1rem;
 			z-index: 10;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: 400ms ease;
+
 			.portfolio_card_box {
-				padding: 1rem;
 				display: flex;
 				flex-direction: column;
 				gap: 0.4rem;
 				align-items: flex-start;
 				justify-content: center;
-				transition: 400ms ease;
 				color: var(--footer-bg-colors);
 			}
 
