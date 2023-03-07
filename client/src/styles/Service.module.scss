@@ -53,7 +53,8 @@
 		.portfolio_card_img_box {
 			border-radius: 4px;
 			overflow: hidden;
-			height: 20rem;
+			min-height: 20rem;
+			width: 100%;
 
 			.portfolio_card_img {
 				width: 100%;
