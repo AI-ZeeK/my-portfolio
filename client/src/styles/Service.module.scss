@@ -41,11 +41,12 @@
 		gap: 0.4rem;
 		transition: 400ms ease;
 		&:is(:hover, :focus) {
-			.line_through {
-				width: 50%;
-				transition: 500ms ease;
-			}
-			.portfolio_card_desc {
+			padding: 0;
+			& .portfolio_card_desc {
+				.line_through {
+					width: 50%;
+					transition: 500ms ease;
+				}
 				top: 0;
 				.portfolio_card_box {
 					transform: translateY(0);
