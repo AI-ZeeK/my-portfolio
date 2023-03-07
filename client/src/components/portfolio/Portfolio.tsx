@@ -25,7 +25,7 @@ const Portfolio = () => {
 						</div>
 						<div className={serviceStyle.portfolio_card_desc}>
 							<div className={serviceStyle.card_desc_head}>{item.head}</div>
-							<div className='line-through' />
+							<div className={serviceStyle.line_through} />
 							<div className={serviceStyle.tech_used_box}>
 								<small>tech used</small>
 								<div className={serviceStyle.tech_used}>
