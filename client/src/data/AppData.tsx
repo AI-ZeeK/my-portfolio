@@ -443,7 +443,7 @@ export const projects = [
 		state: false,
 		img: "/portfolio/Metaversus.png",
 		head: "Metaversus Page",
-		weblink: "https://github.com/AI-ZeeK/next-meta-app",
+		weblink: null,
 		githublink: "https://github.com/AI-ZeeK/next-meta-app",
 		stack: [
 			"Next",
