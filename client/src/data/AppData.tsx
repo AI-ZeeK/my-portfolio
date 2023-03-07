@@ -433,4 +433,13 @@ export const projects = [
 		githublink: "",
 		stack: [react, framer, css],
 	},
+	{
+		id: "1edg7b0c107f2",
+		state: false,
+		img: "/portfolio/proj13.jpeg",
+		head: "Boutique Landing Page",
+		weblink: null,
+		githublink: "",
+		stack: [react, framer, css],
+	},
 ];

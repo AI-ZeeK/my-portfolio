@@ -40,15 +40,20 @@
     transition: 200ms ease;
     position: relative;
     gap: 0.4rem;
+    transition: 200ms ease-in-out;
+    &:hover{
+      padding: 0rem;
+    }
 
     .portfolio_card_desc{
       position: absolute;
       bottom : 0;
       left: 0;
       width: 100%;
-      background: var(--glass-bg);
+      background: var(--glass-bg2);
       backdrop-filter: blur(10px);
-      color: var(--footer-bg-colors)
+      color: var(--footer-bg-colors);
+      padding:1rem;
     }
   }
   .line_through {
