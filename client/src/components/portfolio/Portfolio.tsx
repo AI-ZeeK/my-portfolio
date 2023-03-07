@@ -6,7 +6,9 @@ import Image from "next/image";
 
 const Portfolio = () => {
 	return (
-		<motion.section id="services" className={`${serviceStyle.service_section}`}>
+		<motion.section
+			id="portfolio"
+			className={`${serviceStyle.service_section}`}>
 			<motion.div className={`${serviceStyle.service_head_box}`}>
 				<h1 className={`${serviceStyle.service_head}`}>Projects</h1>
 				<p className={`${serviceStyle.service_desc}`}>Some of my projects</p>
@@ -24,25 +26,32 @@ const Portfolio = () => {
 							/>{" "}
 						</div>
 						<div className={serviceStyle.portfolio_card_desc}>
-							<div className={serviceStyle.card_desc_head}>{item.head}</div>
-							<div className={serviceStyle.line_through} />
-							<div className={serviceStyle.tech_used_box}>
-								<small>tech used</small>
-								<div className={serviceStyle.tech_used}>
-									{item.stack.map((item2, index) => (
-										<div key={index}>{item2}</div>
-									))}
+							<div className={serviceStyle.portfolio_card_box}>
+								<div className={serviceStyle.card_desc_head}>
+									<span>{item.head}</span>
+
+									<div className={serviceStyle.line_through} />
 								</div>
-							</div>
-							<div className={serviceStyle.btn_link_box}>
-								{item.weblink && (
-									<Link className={serviceStyle.btn_link} href={item.weblink}>
-										Live Demo
+								<div className={serviceStyle.tech_used_box}>
+									<small>tech used</small>
+									<div className={serviceStyle.tech_used}>
+										{item.stack.map((item2, index) => (
+											<div key={index}>{item2}</div>
+										))}
+									</div>
+								</div>
+								<div className={serviceStyle.btn_link_box}>
+									{item.weblink && (
+										<Link className={serviceStyle.btn_link} href={item.weblink}>
+											Live Demo
+										</Link>
+									)}
+									<Link
+										className={serviceStyle.btn_link}
+										href={item.githublink}>
+										GitHub
 									</Link>
-								)}
-								<Link className={serviceStyle.btn_link} href={item.githublink}>
-									GitHub
-								</Link>
+								</div>
 							</div>
 						</div>
 					</div>
