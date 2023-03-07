@@ -43,15 +43,13 @@
 		&:is(:hover, :focus) {
 			padding: 0;
 			& .portfolio_card_desc {
-				justify-content: center;
+				padding-block: 3rem;
 				.line_through {
 					width: 50%;
 					transition: 500ms ease;
 				}
 				top: 0;
-				.portfolio_card_box {
-					padding-block: 5rem;
-				}
+				
 			}
 		}
 		.portfolio_card_img_box {
