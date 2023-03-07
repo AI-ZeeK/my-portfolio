@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 import serviceStyle from "../../styles/Service.module.scss";
 import { motion } from "framer-motion";
 import { projects } from "@/data/AppData";
@@ -11,23 +11,39 @@ const Portfolio = () => {
 				<h1 className={`${serviceStyle.service_head}`}>Projects</h1>
 				<p className={`${serviceStyle.service_desc}`}>Some of my projects</p>
 			</motion.div>
-			<div  className={serviceStyle.service_card_block}>
+			<div className={serviceStyle.service_card_block}>
 				{projects.map((item) => (
 					<div key={item?.id} className={serviceStyle.portfolio_card}>
-						<div>
-							<Image width={500} height={500} src={item?.img} alt="ralt" />{" "}
+						<div className={serviceStyle.portfolio_card_img_box}>
+							<Image
+								className={serviceStyle.portfolio_card_img}
+								width={500}
+								height={500}
+								src={item?.img}
+								alt="ralt"
+							/>{" "}
 						</div>
-						<div  className={serviceStyle.portfolio_card_desc}>
-						<div>
-							<h3>{item.head} </h3>{" "}
-						</div>
-						<div>
-							{item.stack.map((item2, index) => (
-								<div key={index}>
-									<Image width={50} height={50} src={item2} alt="ralt" />{" "}
+						<div className={serviceStyle.portfolio_card_desc}>
+							<div className={serviceStyle.card_desc_head}>{item.head}</div>
+							<div className='line-through' />
+							<div className={serviceStyle.tech_used_box}>
+								<small>tech used</small>
+								<div className={serviceStyle.tech_used}>
+									{item.stack.map((item2, index) => (
+										<div key={index}>{item2}</div>
+									))}
 								</div>
-							))}{" "}
-						</div>
+							</div>
+							<div className={serviceStyle.btn_link_box}>
+								{item.weblink && (
+									<Link className={serviceStyle.btn_link} href={item.weblink}>
+										Live Demo
+									</Link>
+								)}
+								<Link className={serviceStyle.btn_link} href={item.githublink}>
+									GitHub
+								</Link>
+							</div>
 						</div>
 					</div>
 				))}

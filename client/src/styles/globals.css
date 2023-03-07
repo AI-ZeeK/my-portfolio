@@ -657,7 +657,7 @@ html {
 :root {
   --main-bg: #fafafa;
   --glass-bg: #0073ff11;
-  --glass-bg2: #00000022;
+  --glass-bg2: #00000011;
   --placeholder-text-color: #40404088;
   --tertiary-bg: #fafafa;
   --main-text-color: #1a1a1a;
@@ -702,7 +702,6 @@ html {
   --btn-text-color: #ffffff;
   --footer-bg-color: #314154;
   --card-bg-color: #ffffff;
-  color-scheme: light;
 }
 
 body {
@@ -714,6 +713,7 @@ body {
 body.dim {
   --main-bg: #1a232e;
   --glass-bg: #ffd29422;
+  --glass-bg2: #1a232e88;
   --tertiary-bg: #2b3642;
   --placeholder-text-color: #85858588;
   --main-text-color: #ffffff;
@@ -766,6 +766,7 @@ body.black {
   --main-bg: #000;
   --tertiary-bg: #333333;
   --glass-bg: #ffd29422;
+  --glass-bg2: #00000088;
   --main-text-color: #ffd294;
   --btn-text-color: #ffd294;
   --placeholder-text-color: #a6896288;
@@ -816,6 +817,7 @@ body.coffee {
   --main-bg: #3a2200;
   --tertiary-bg: #333333;
   --glass-bg: #ffd29422;
+  --glass-bg2: #00000088;
   --placeholder-text-color: #a6896288;
   --btn-text-color: #ffd294;
   --main-text-color: #ffd294;
@@ -930,7 +932,7 @@ a {
   body.dim {
     --main-bg: #1a232e;
     --glass-bg: #ffd29422;
-    --glass-bg2: #1a232e22;
+    --glass-bg2: #1a232e88;
     --tertiary-bg: #2b3642;
     --placeholder-text-color: #85858588;
     --main-text-color: #ffffff;
@@ -982,7 +984,7 @@ a {
     --main-bg: #000;
     --tertiary-bg: #333333;
     --glass-bg: #ffd29422;
-    --glass-bg2: #00000022;
+    --glass-bg2: #00000088;
     --main-text-color: #ffd294;
     --btn-text-color: #ffd294;
     --placeholder-text-color: #a6896288;
@@ -1032,7 +1034,7 @@ a {
     --main-bg: #3a2200;
     --tertiary-bg: #333333;
     --glass-bg: #ffd29422;
-    --glass-bg: #3a220022;
+    --glass-bg2: #00000088;
     --placeholder-text-color: #a6896288;
     --btn-text-color: #ffd294;
     --main-text-color: #ffd294;

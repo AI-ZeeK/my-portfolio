@@ -431,7 +431,7 @@ export const projects = [
 		head: "Boutique Landing Page",
 		weblink: null,
 		githublink: "",
-		stack: [react, framer, css],
+		stack: ['React', "Framer Motion", "CSS"],
 	},
 	{
 		id: "1edg7b0c107f2",
@@ -440,6 +440,6 @@ export const projects = [
 		head: "Boutique Landing Page",
 		weblink: null,
 		githublink: "",
-		stack: [react, framer, css],
+		stack: ['react', 'framer', 'css'],
 	},
 ];
