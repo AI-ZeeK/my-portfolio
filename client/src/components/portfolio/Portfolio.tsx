@@ -43,7 +43,7 @@ const Portfolio = () => {
 								<div className={serviceStyle.btn_link_box}>
 									{item.weblink && (
 										<Link className={serviceStyle.btn_link} href={item.weblink}>
-											Live Demo
+											Demo
 										</Link>
 									)}
 									<Link
