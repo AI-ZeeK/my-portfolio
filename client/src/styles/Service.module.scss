@@ -41,7 +41,6 @@
 		gap: 0.4rem;
 		transition: 400ms ease;
 		&:is(:hover, :focus) {
-			padding: 0rem;
 			.line_through {
 				width: 50%;
 				transition: 500ms ease;
