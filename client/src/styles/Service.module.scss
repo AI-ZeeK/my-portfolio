@@ -43,6 +43,7 @@
 		&:is(:hover, :focus) {
 			padding: 0;
 			& .portfolio_card_desc {
+				justify-content: center;
 				.line_through {
 					width: 50%;
 					transition: 500ms ease;
