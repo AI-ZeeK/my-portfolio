@@ -37,7 +37,7 @@ html {
 :root {
 	--main-bg: #fafafa;
 	--glass-bg: #0073ff11;
-	--glass-bg2: #00000011;
+	--glass-bg2: #ffffff66;
 	--port-text: #fff;
 
 	--placeholder-text-color: #40404088;
@@ -267,6 +267,7 @@ a {
 		--main-bg: #fafafa;
 		--glass-bg: #0073ff11;
 		--port-text: #fff;
+		--glass-bg2: #ffffff66;
 
 		--placeholder-text-color: #40404088;
 		--tertiary-bg: #fafafa;
