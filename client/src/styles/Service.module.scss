@@ -47,6 +47,10 @@
 			}
 			.portfolio_card_desc {
 				top: 0;
+				.portfolio_card_box {
+					transform: translateY(0);
+					transition: 400ms ease;
+				}
 			}
 		}
 		.portfolio_card_img_box {
@@ -74,13 +78,13 @@
 			width: 100%;
 			top: 80%;
 			max-height: 1000px;
-			// transform: translateY(8rem);
+
 			background: var(--glass-bg2);
 			backdrop-filter: blur(10px);
 			padding: 1rem;
 			z-index: 10;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			flex-direction: column;
 			justify-content: center;
 			transition: 400ms ease;
@@ -92,6 +96,8 @@
 				align-items: flex-start;
 				justify-content: center;
 				color: var(--footer-bg-colors);
+				transform: translateY(10rem);
+				transition: 400ms ease;
 			}
 
 			.card_desc_head {
