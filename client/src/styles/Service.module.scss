@@ -53,7 +53,7 @@
 		.portfolio_card_img_box {
 			border-radius: 4px;
 			overflow: hidden;
-			min-height: 20rem;
+			height: 24rem;
 			width: 100%;
 
 			.portfolio_card_img {
@@ -73,7 +73,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			top: 30%;
+			top: 70%;
 			max-height: 1000px;
 			// transform: translateY(8rem);
 			background: var(--glass-bg2);
