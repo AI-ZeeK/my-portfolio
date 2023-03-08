@@ -45,8 +45,8 @@ export default function Home() {
 					<About />
 					<div className="line-through" />
 					<Skills />
-					// <div className="line-through" />
-					// <Services />
+					{/*  <div className="line-through" />
+					// <Services /> */}
 					<div className="line-through" />
 					<Portfolio />
 					<div className="line-through" />
