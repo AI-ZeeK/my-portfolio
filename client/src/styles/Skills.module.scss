@@ -41,7 +41,7 @@
 			max-height: 5rem;
 			transition: 200ms ease;
 			&.active{
-				height: 100% !important;
+				height: fit-content   !important;
 				max-height: 120rem !important;
 			}
 
