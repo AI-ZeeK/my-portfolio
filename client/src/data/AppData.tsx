@@ -530,17 +530,9 @@ export const projects = [
 		state: false,
 		img: "/portfolio/My-dash.png",
 		head: "Project Dashboard App",
-		weblink: "my-dash-5uh78p3ja-ai-zeek.vercel.app",
+		weblink: "https://my-dash-5uh78p3ja-ai-zeek.vercel.app",
 		githublink: "https://github.com/AI-ZeeK/my-dash",
 		stack: ["React", "SCSS", "Javascript", "Recharts", "CSS", "Vite"],
 	},
-	{
-		id: "1edg7uytc190if2",
-		state: false,
-		img: "/portfolio/Digi.png",
-		head: "DigiLabs App",
-		weblink: null,
-		githublink: "https://github.com/AI-ZeeK/DigiLabs-Assessment",
-		stack: ["React", "SCSS", "Javascript", "CSS", "Vite"],
-	},
+	
 ];
