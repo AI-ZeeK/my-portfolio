@@ -41,13 +41,13 @@ const About = () => {
 							deliver solutions that meet the needs of stakeholders.
 						</p>
 					</div>
-					<div className={`${aboutStyle.about_info_box}`}>
+					{/* <div className={`${aboutStyle.about_info_box}`}>
 						<strong>1+</strong>
 						<small>
 							years <br />
 							Experience
 						</small>
-					</div>
+					</div> */}
 					<div className={`${aboutStyle.about_info_box}`}>
 						<Link
 							href="/resume/resume.pdf"

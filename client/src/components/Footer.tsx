@@ -70,13 +70,13 @@ const Footer = () => {
             viewport={{ once: false, amount: 0.25 }}>
             <Link href={`#services`}>Services</Link>
           </motion.li>
-          <motion.li
+          {/* <motion.li
             variants={fadeIn("left", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>
             <Link href={`#blog`}>Blog</Link>
-          </motion.li>
+          </motion.li> */}
         </motion.ul>
         <motion.ul
           variants={staggerContainer}
@@ -102,13 +102,13 @@ const Footer = () => {
               <AiFillGithub />
             </Link>
           </motion.li>
-          <motion.li
+          {/* <motion.li
             variants={planetVariants("right")}
             whileInView="show"
             initial="hidden"
             viewport={{ once: false, amount: 0.25 }}>
             <CiFacebook />
-          </motion.li>
+          </motion.li> */}
           <motion.li
             variants={planetVariants("right")}
             whileInView="show"
