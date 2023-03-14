@@ -50,7 +50,7 @@ const About = () => {
 					</div> */}
 					<div className={`${aboutStyle.about_info_box}`}>
 						<Link
-							href="/resume/resume.pdf"
+							href=""
 							download=""
 							className={`${aboutStyle.btn_primary}`}>
 							<span>Download CV</span>
