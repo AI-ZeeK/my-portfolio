@@ -526,6 +526,23 @@ export const projects = [
 		],
 	},
 	{
+		id: "1e3fb0m947f2",
+		state: false,
+		img: "/portfolio/Metaversus.png",
+		head: "Metaversus Page",
+		weblink: "https://next-meta-app.vercel.app",
+		githublink: "https://github.com/AI-ZeeK/next-meta-app",
+		stack: [
+			"Next",
+			"React",
+			"Typescript",
+			"Framer Motion",
+			"CSS",
+			"Tailwind CSS",
+			"Javascript",
+		],
+	},
+	{
 		id: "1edg7b0c190if2",
 		state: false,
 		img: "/portfolio/My-dash.png",
