@@ -438,23 +438,7 @@ export const contactMe = [
 ];
 
 export const projects = [
-	{
-		id: "1e3fb0m947f2",
-		state: false,
-		img: "/portfolio/Metaversus.png",
-		head: "Metaversus Page",
-		weblink: "https://next-meta-app.vercel.app",
-		githublink: "https://github.com/AI-ZeeK/next-meta-app",
-		stack: [
-			"Next",
-			"React",
-			"Typescript",
-			"Framer Motion",
-			"CSS",
-			"Tailwind CSS",
-			"Javascript",
-		],
-	},
+
 	{
 		id: "1e3fb0m9gjf2",
 		state: false,
@@ -479,17 +463,16 @@ export const projects = [
 	{
 		id: "1eopb0m9gjf2",
 		state: false,
-		img: "/portfolio/Metaversus.png",
-		head: "Auth Project",
-		weblink: null,
-		githublink: "https://github.com/AI-ZeeK/Jwt-tut",
+		img: "/portfolio/Memories.png",
+		head: "Memories Project",
+		weblink: "https://memories-app-jet.vercel.app/",
+		githublink: "https://github.com/AI-ZeeK/Memories-App",
 		stack: [
-			"SCSS",
 			"React",
-			"Typescript",
 			"JWT",
 			"CSS",
-			"Tailwind CSS",
+			"Material UI",
+			"Google Oauth",
 			"Javascript",
 			"NodeJS",
 			"ExpressJS",
@@ -523,6 +506,23 @@ export const projects = [
 			"Hardhat",
 			"EthersJS",
 			"Vite",
+		],
+	},
+		{
+		id: "1e3fb0m947f2",
+		state: false,
+		img: "/portfolio/Metaversus.png",
+		head: "Metaversus Page",
+		weblink: "https://next-meta-app.vercel.app",
+		githublink: "https://github.com/AI-ZeeK/next-meta-app",
+		stack: [
+			"Next",
+			"React",
+			"Typescript",
+			"Framer Motion",
+			"CSS",
+			"Tailwind CSS",
+			"Javascript",
 		],
 	},
 	{
