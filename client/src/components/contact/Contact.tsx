@@ -79,7 +79,7 @@ const Contact = () => {
 					className={`${contactStyles.contact_advert_info}`}>
 					<h2>Do you have a project in mind?</h2>
 					<p>
-						Contact me now and get a 20% discount on your new Frontend projects
+						Contact me for your fullstack Web2/Web3 projects
 					</p>
 					<motion.div>
 						<Link
