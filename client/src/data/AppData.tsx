@@ -336,12 +336,12 @@ export const TechStack = [
 				desc: "Stripe",
 				img: stripe,
 			},
-			{
-				id: "1e0gb0c10jd2",
-				state: false,
-				desc: "Remix IDE",
-				img: "",
-			},
+			// {
+			// 	id: "1e0gb0c10jd2",
+			// 	state: false,
+			// 	desc: "Remix IDE",
+			// 	img: "",
+			// },
 		],
 	},
 ];
