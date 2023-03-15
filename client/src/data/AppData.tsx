@@ -443,7 +443,7 @@ export const projects = [
 		state: false,
 		img: "/portfolio/Metaversus.png",
 		head: "Metaversus Page",
-		weblink: null,
+		weblink: "https://next-meta-app.vercel.app",
 		githublink: "https://github.com/AI-ZeeK/next-meta-app",
 		stack: [
 			"Next",
