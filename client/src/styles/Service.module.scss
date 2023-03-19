@@ -174,9 +174,13 @@
 		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1.2rem;
 		.portfolio_desc{
-			padding:1rem;
+			padding:1rem 0.2rem;
 			font-size:1rem;
-			border-bottom: 1px solid var(--shadow-color);
+			text-align: justify;
+			border: 1px solid var(--shadow-color);
+			border-top: none;
+			border-radius: 8px;
+
 		}
 	}
 
@@ -267,7 +271,6 @@
 			grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)) !important;
 			gap: 1rem !important;
 			.portfolio_desc{
-				padding:1rem;
 				font-size:0.8rem !important;
 			}
 		}
