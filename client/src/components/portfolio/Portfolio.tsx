@@ -15,8 +15,8 @@ const Portfolio = () => {
 			</motion.div>
 			<div className={serviceStyle.service_card_block}>
 				{projects.map((item) => (
-					<div className={serviceStyle.portfolio} >
-						<div key={item?.id} className={serviceStyle.portfolio_card}>
+					<div key={item?.id}  className={serviceStyle.portfolio} >
+						<div className={serviceStyle.portfolio_card}>
 							<div className={serviceStyle.portfolio_card_img_box}>
 								<Image
 									className={serviceStyle.portfolio_card_img}
