@@ -15,50 +15,50 @@ const Portfolio = () => {
 			</motion.div>
 			<div className={serviceStyle.service_card_block}>
 				{projects.map((item) => (
-					<div>
-					<div key={item?.id} className={serviceStyle.portfolio_card}>
-						<div className={serviceStyle.portfolio_card_img_box}>
-							<Image
-								className={serviceStyle.portfolio_card_img}
-								width={500}
-								height={500}
-								src={item?.img}
-								alt="ralt"
-							/>{" "}
-						</div>
-						<div className={serviceStyle.portfolio_card_desc}>
-							<div className={serviceStyle.portfolio_card_box}>
-								<div className={serviceStyle.card_desc_head}>
-									<span>{item.head}</span>
+					<div className={serviceStyle.portfolio} >
+						<div key={item?.id} className={serviceStyle.portfolio_card}>
+							<div className={serviceStyle.portfolio_card_img_box}>
+								<Image
+									className={serviceStyle.portfolio_card_img}
+									width={500}
+									height={500}
+									src={item?.img}
+									alt="ralt"
+								/>{" "}
+							</div>
+							<div className={serviceStyle.portfolio_card_desc}>
+								<div className={serviceStyle.portfolio_card_box}>
+									<div className={serviceStyle.card_desc_head}>
+										<span>{item.head}</span>
 
-									<div className={serviceStyle.line_through} />
-								</div>
-								<div className={serviceStyle.tech_used_box}>
-									<small>tech used</small>
-									<div className={serviceStyle.tech_used}>
-										{item.stack.map((item2, index) => (
-											<div key={index}>{item2}</div>
-										))}
+										<div className={serviceStyle.line_through} />
 									</div>
-								</div>
-								<div className={serviceStyle.btn_link_box}>
-									{item.weblink && (
-										<Link className={serviceStyle.btn_link} href={item.weblink}>
-											Demo
+									<div className={serviceStyle.tech_used_box}>
+										<small>tech used</small>
+										<div className={serviceStyle.tech_used}>
+											{item.stack.map((item2, index) => (
+												<div key={index}>{item2}</div>
+											))}
+										</div>
+									</div>
+									<div className={serviceStyle.btn_link_box}>
+										{item.weblink && (
+											<Link className={serviceStyle.btn_link} href={item.weblink}>
+												Demo
+											</Link>
+										)}
+										<Link
+											className={serviceStyle.btn_link}
+											href={item.githublink}>
+											GitHub
 										</Link>
-									)}
-									<Link
-										className={serviceStyle.btn_link}
-										href={item.githublink}>
-										GitHub
-									</Link>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div  className={serviceStyle.portfolio_desc}>
-						{item.desc}
-					</div>
+						<div className={serviceStyle.portfolio_desc}>
+							{item?.desc}
+						</div>
 					</div>
 				))}
 			</div>
