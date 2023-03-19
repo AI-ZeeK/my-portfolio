@@ -17,7 +17,7 @@
 		border-radius: 8px;
 		border: 1px solid var(--shadow-color);
 		cursor: pointer;
-			&:is(:hover, :focus)  .portfolio_card  {
+			&:is(:hover, :focus) .portfolio_card  {
 			padding: 0;
 			& .portfolio_card_desc {
 				padding-block: 3rem;

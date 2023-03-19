@@ -61,6 +61,7 @@ const stripe = "/stripe-4.svg";
 const ethers = "/download.png";
 const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
+const nest = "/logo-small.svg";
 
 export const NavData = [
 	{
@@ -236,6 +237,12 @@ export const TechStack = [
 				state: false,
 				desc: "PostgresQL",
 				img: postgresql,
+			},
+			{
+				id: "ba6b50a98909",
+				state: false,
+				desc: "NestJS",
+				img: nest,
 			},
 			{
 				id: "29c6a1020243",
