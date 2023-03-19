@@ -13,6 +13,7 @@
 		flex-direction: column;
 		grid-template-columns: 1fr;
 		gap:0.8rem;
+
 	}
 	.service_head_box {
 		display: flex;
@@ -34,6 +35,8 @@
 	.portfolio_card {
 		background-color: var(--card-bg-color);
 		border-radius: 8px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 		overflow: hidden;
 		border: 1px solid var(--shadow-color);
 		// padding: 1rem;
@@ -171,11 +174,11 @@
 	}
 	.service_card_block {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 		gap: 1.2rem;
 		.portfolio_desc{
 			padding:1rem 0.6rem;
-			font-size:1rem;
+			font-size:0.9rem;
 			text-align: justify;
 			border: 1px solid var(--shadow-color);
 			border-top: none;
