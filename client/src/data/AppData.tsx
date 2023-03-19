@@ -438,7 +438,6 @@ export const contactMe = [
 ];
 
 export const projects = [
-
 	{
 		id: "1e3fb0m9gjf2",
 		state: false,
@@ -459,6 +458,7 @@ export const projects = [
 			"ExpressJS",
 			"MongoDB",
 		],
+		desc: 'The Fullstack GraphQL Project Management Project is a tool that enables users to manage client information and associated projects. With features like create, update, delete, and view, it simplifies the process of managing clients and their projects. Built with GraphQL, it provides a seamless and efficient user experience.'
 	},
 	{
 		id: "1eopb0m9gjf2",
@@ -478,16 +478,9 @@ export const projects = [
 			"ExpressJS",
 			"MongoDB",
 		],
+		desc: 'The Fullstack Social Memories project is a platform for creating, updating, and viewing memories projects with user details. It allows users to share their projects with everyone or a select few, and others can like them once. The creator has the option to delete the project, with secure authentication integrated for added security.'
 	},
-	{
-		id: "1e3fb0c107f2",
-		state: false,
-		img: "/portfolio/proj13.jpeg",
-		head: "Boutique Landing Page",
-		weblink: null,
-		githublink: "https://github.com/AI-ZeeK/boutique-landing-page",
-		stack: ["React", "Framer Motion", "CSS", "Javascript"],
-	},
+
 	{
 		id: "1edg7b0c107f2",
 		state: false,
@@ -507,6 +500,7 @@ export const projects = [
 			"EthersJS",
 			"Vite",
 		],
+		desc: 'The Full Stack Web3 project is a decentralized application that enables users to send money with descriptions, view their transaction history, and use Metamask for secure transactions. The project utilizes web3 technologies to interact with the blockchain and smart contracts, ensuring the security and transparency of all transactions.'
 	},
 	{
 		id: "1e3fb0m947f2",
@@ -524,15 +518,8 @@ export const projects = [
 			"Tailwind CSS",
 			"Javascript",
 		],
+		desc: 'The Next.js project focuses on developing a modern frontend using principles such as CSS positioning, animations, and responsiveness. It emphasizes my understanding of these concepts to create dynamic, user-friendly web applications.'
 	},
-	{
-		id: "1edg7b0c190if2",
-		state: false,
-		img: "/portfolio/My-dash.png",
-		head: "Project Dashboard App",
-		weblink: "https://my-dash-5uh78p3ja-ai-zeek.vercel.app",
-		githublink: "https://github.com/AI-ZeeK/my-dash",
-		stack: ["React", "SCSS", "Javascript", "Recharts", "CSS", "Vite"],
-	},
+	
 	
 ];

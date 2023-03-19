@@ -167,6 +167,10 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 		gap: 1.2rem;
+		.portfolio_desc{
+			padding:1rem;
+			font-size:1rem;
+		}
 	}
 
 	.service_card {
@@ -255,6 +259,10 @@
 		.service_card_block {
 			grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)) !important;
 			gap: 1rem !important;
+			.portfolio_desc{
+				padding:1rem;
+				font-size:0.8rem !important;
+			}
 		}
 		.service_head_box {
 			padding: 0.4rem !important;
