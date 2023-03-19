@@ -16,6 +16,7 @@
 		background: var(--card-bg-color);
 		border-radius: 8px;
 		border: 1px solid var(--shadow-color);
+		cursor: pointer;
 			&:is(:hover, :focus)  .portfolio_card  {
 			padding: 0;
 			& .portfolio_card_desc {
