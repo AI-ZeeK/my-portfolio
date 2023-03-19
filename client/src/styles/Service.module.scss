@@ -16,6 +16,17 @@
 		background: var(--card-bg-color);
 		border-radius: 8px;
 		border: 1px solid var(--shadow-color);
+			&:is(:hover, :focus)  .portfolio_card  {
+			padding: 0;
+			& .portfolio_card_desc {
+				padding-block: 3rem;
+				.line_through {
+					width: 50%;
+					transition: 500ms ease;
+				}
+				top: 0;
+			}
+		}
 	}
 	.service_head_box {
 		display: flex;
@@ -51,17 +62,7 @@
 		position: relative;
 		gap: 0.4rem;
 		transition: 400ms ease;
-		&:is(:hover, :focus) {
-			padding: 0;
-			& .portfolio_card_desc {
-				padding-block: 3rem;
-				.line_through {
-					width: 50%;
-					transition: 500ms ease;
-				}
-				top: 0;
-			}
-		}
+	
 		.portfolio_card_img_box {
 			border-radius: 4px;
 			overflow: hidden;
