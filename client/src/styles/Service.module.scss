@@ -13,6 +13,9 @@
 		flex-direction: column;
 		grid-template-columns: 1fr;
 		gap:0.8rem;
+		background: var(--card-bg-color);
+		border-radius: 8px;
+
 
 	}
 	.service_head_box {
@@ -182,10 +185,8 @@
 			text-align: justify;
 			border: 1px solid var(--shadow-color);
 			border-top: none;
-			border-radius: 8px;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
-			background: var(--card-bg-color)
 		}
 	}
 
