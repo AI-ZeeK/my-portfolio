@@ -455,7 +455,7 @@ export const projects = [
 		stack: [
 			"React",
 			"Typescript",
-			"Material UI
+			"Material UI",
 			"CSS",
 			"SCSS",	
 			"Javascript",
