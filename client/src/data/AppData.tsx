@@ -446,6 +446,26 @@ export const contactMe = [
 
 export const projects = [
 	{
+		id: "1e3fb0mbljf2",
+		state: false,
+		img: "/portfolio/social.png",
+		head: "Social Media App",
+		weblink: "https://my-social-app-three.vercel.app",
+		githublink: "https://github.com/AI-ZeeK/my-portfolio",
+		stack: [
+			"React",
+			"Typescript",
+			"Material UI
+			"CSS",
+			"SCSS",	
+			"Javascript",
+			"NodeJS",
+			"ExpressJS",
+			"MongoDB",
+		],
+		desc: 'The Fullstack Social Media Project is a tool that enables users to make social posts. With features like create, update, delete, and view.'
+	},
+	{
 		id: "1e3fb0m9gjf2",
 		state: false,
 		img: "/portfolio/graphproj.png",
