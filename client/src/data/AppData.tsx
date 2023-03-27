@@ -62,6 +62,7 @@ const ethers = "/download.png";
 const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
 const nest = "/logo-small.svg";
+const prisma = "/prisma-2.svg";
 
 export const NavData = [
   {
@@ -256,6 +257,12 @@ export const TechStack = [
         desc: "GraphQL",
         img: graphql,
       },
+        {
+        id: "9a10ba7211565",
+        state: false,
+        desc: "Prisma",
+        img: prisma,
+      },
     ],
   },
   {
@@ -337,18 +344,7 @@ export const TechStack = [
         desc: "MS Word",
         img: word,
       },
-      {
-        id: "1e0gb069p12f2",
-        state: false,
-        desc: "Stripe",
-        img: stripe,
-      },
-      // {
-      // 	id: "1e0gb0c10jd2",
-      // 	state: false,
-      // 	desc: "Remix IDE",
-      // 	img: "",
-      // },
+      
     ],
   },
 ];
