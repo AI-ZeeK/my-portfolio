@@ -222,6 +222,12 @@ export const TechStack = [
         desc: "Expressjs",
         img: express,
       },
+            {
+        id: "ba6b50a98909",
+        state: false,
+        desc: "NestJS",
+        img: nest,
+      },
       {
         id: "70193b0179d5",
         state: false,
@@ -234,12 +240,7 @@ export const TechStack = [
         desc: "PostgresQL",
         img: postgresql,
       },
-      {
-        id: "ba6b50a98909",
-        state: false,
-        desc: "NestJS",
-        img: nest,
-      },
+
       {
         id: "29c6a1020243",
         state: false,
