@@ -63,6 +63,7 @@ const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
 const nest = "/logo-small.svg";
 const prisma = "/prisma-2.svg";
+const cypress = "/cypress.svg"
 
 export const NavData = [
   {
@@ -192,12 +193,6 @@ export const TechStack = [
         state: false,
         desc: "Framer Motion",
         img: framer,
-      },
-      {
-        id: "Po171d78j9a3",
-        state: false,
-        desc: "Jest",
-        img: jest,
       },
       {
         id: "Po17i978j9a3",
@@ -344,7 +339,18 @@ export const TechStack = [
         desc: "MS Word",
         img: word,
       },
-      
+        {
+        id: "Po171d78j9a3",
+        state: false,
+        desc: "Jest",
+        img: jest,
+      },
+        {
+        id: "AP171d78j9a3",
+        state: false,
+        desc: "Cypress",
+        img: cypress,
+      },
     ],
   },
 ];
