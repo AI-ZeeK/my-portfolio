@@ -62,9 +62,11 @@ const ethers = "/download.png";
 const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
 const nest = "/logo-small.svg";
+
 const angular = "/anguar-icon.svg";
 const ngxs = "/NGXS.png";
 const cypress = "/cypress.svg";
+const prisma = "/prisma-2.svg";
 
 export const NavData = [
 	{
@@ -182,7 +184,6 @@ export const TechStack = [
 				desc: "Tailwind",
 				img: tailwindcss,
 			},
-
 			{
 				id: "58b833780bb5",
 				state: false,
@@ -208,18 +209,6 @@ export const TechStack = [
 				img: framer,
 			},
 			{
-				id: "Po171d78j9a3",
-				state: false,
-				desc: "Jest",
-				img: jest,
-			},
-			{
-				id: "Po071d78j9a3",
-				state: false,
-				desc: "Cypress",
-				img: cypress,
-			},
-			{
 				id: "Po17i978j9a3",
 				state: false,
 				desc: "Apollo Client",
@@ -227,6 +216,7 @@ export const TechStack = [
 			},
 		],
 	},
+
 	{
 		id: "141a7f01",
 		state: false,
@@ -277,6 +267,12 @@ export const TechStack = [
 				state: false,
 				desc: "GraphQL",
 				img: graphql,
+			},
+			{
+				id: "9a10ba7211565",
+				state: false,
+				desc: "Prisma",
+				img: prisma,
 			},
 		],
 	},
@@ -348,29 +344,23 @@ export const TechStack = [
 				img: vscode,
 			},
 			{
-				id: "1e0gb067f07f2",
-				state: false,
-				desc: "Google Analytics",
-				img: googleanalytics,
-			},
-			{
 				id: "1e0gb069p07f2",
 				state: false,
 				desc: "MS Word",
 				img: word,
 			},
 			{
-				id: "1e0gb069p12f2",
+				id: "Po171d78j9a3",
 				state: false,
-				desc: "Stripe",
-				img: stripe,
+				desc: "Jest",
+				img: jest,
 			},
-			// {
-			// 	id: "1e0gb0c10jd2",
-			// 	state: false,
-			// 	desc: "Remix IDE",
-			// 	img: "",
-			// },
+			{
+				id: "AP171d78j9a3",
+				state: false,
+				desc: "Cypress",
+				img: cypress,
+			},
 		],
 	},
 ];

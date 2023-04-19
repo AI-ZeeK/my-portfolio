@@ -122,7 +122,7 @@ const HomePage = ({ targetRef }: any) => {
               <span className={`${homeStyles.home__title_span}`}>Isaac</span>
             </motion.h1>
             <TypingText
-              title="Full Stack Web3 Developer"
+              title="Full Stack Developer"
               textStyles={`${homeStyles.home__subtitle}`}
             />
 
