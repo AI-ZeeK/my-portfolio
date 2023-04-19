@@ -63,7 +63,7 @@ const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
 const nest = "/logo-small.svg";
 
-const angular = "/anguar-icon.svg";
+const angular = "/angular-icon.svg";
 const ngxs = "/NGXS.png";
 const cypress = "/cypress.svg";
 const prisma = "/prisma-2.svg";
