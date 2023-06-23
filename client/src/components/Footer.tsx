@@ -38,8 +38,8 @@ const Footer = () => {
             viewport={{ once: false, amount: 0.25 }}
             className={footerStyle.footer_top_info}>
             <h1>Isaac Williams</h1>
-            <p>FullStack Developer</p>
-            <p>Blockchain Developer</p>
+            <p>FullStack Web2/Web3 Developer</p>
+            <p>Smart contract Developer</p>
           </motion.div>
         </div>
 

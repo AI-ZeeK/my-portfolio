@@ -302,12 +302,12 @@ export const TechStack = [
         desc: "Hardhat",
         img: hardhat,
       },
-      {
-        id: "1e0fb5j107f2",
-        state: false,
-        desc: "Metamask",
-        img: metamask,
-      },
+      //   {
+      //     id: "1e0fb5j107f2",
+      //     state: false,
+      //     desc: "Metamask",
+      //     img: metamask,
+      //   },
     ],
   },
   {
