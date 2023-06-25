@@ -68,15 +68,15 @@ const HomePage = ({targetRef}: any) => {
                   width="100vw"
                   height="100vh"
                 >
-                  {/* <feFlood flood-color="#ffffff" result="neutral-gray" /> */}
-                  <feTurbulence
+                  <feFlood flood-color="#ffffff" result="neutral-gray" />
+                  {/* <feTurbulence
                     in="neutral-gray"
                     type="fractalNoise"
                     baseFrequency="2.5"
                     numOctaves="100"
                     stitchTiles="stitch"
                     result="noise"
-                  />
+                  /> */}
                   <feColorMatrix
                     in="noise"
                     type="saturate"
