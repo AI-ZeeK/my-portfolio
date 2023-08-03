@@ -499,6 +499,16 @@ export const projects = [
     desc: "The Next.js project focuses on developing a modern frontend using principles such as CSS positioning, animations, and responsiveness. It emphasizes my understanding of these concepts to create dynamic, user-friendly web applications.",
   },
   {
+    id: "1L1fb0m947f2",
+    state: false,
+    img: "/portfolio/ks.png",
+    head: "Kitchen Stories",
+    weblink: "https://kitchenstories-puce.vercel.app",
+    githublink: "https://github.com/AI-ZeeK/social-app",
+    stack: ["Angular", "NGXS", "Typescript", "CSS"],
+    desc: "An angular application with dynamic routes, grid and flexbox alignments.",
+  },
+  {
     id: "1e3fb0Klp7f2",
     state: false,
     img: "/portfolio/black.jpeg",
