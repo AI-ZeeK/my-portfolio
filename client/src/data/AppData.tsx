@@ -142,29 +142,35 @@ export const TechStack = [
         img: react,
       },
       {
+        id: "70193b4389d5",
+        state: false,
+        desc: "React Native",
+        img: react,
+      },
+      {
         id: "ba6b55a98c09",
         state: false,
         desc: "Next",
         img: nextjs,
       },
-      {
-        id: "29c6a1620243",
-        state: false,
-        desc: "Redux",
-        img: redux,
-      },
+      //   {
+      //     id: "29c6a1620243",
+      //     state: false,
+      //     desc: "Redux",
+      //     img: redux,
+      //   },
       {
         id: "ba6b6y5a98c09",
         state: false,
         desc: "Angular",
         img: angular,
       },
-      {
-        id: "29cb61620243",
-        state: false,
-        desc: "NGXS",
-        img: ngxs,
-      },
+      //   {
+      //     id: "29cb61620243",
+      //     state: false,
+      //     desc: "NGXS",
+      //     img: ngxs,
+      //   },
 
       {
         id: "9a14ba727565",
@@ -458,6 +464,24 @@ export const contactMe = [
 
 export const projects = [
   {
+    id: "1e3fbP2947f2",
+    state: false,
+    img: "/portfolio/Djengo.png",
+    head: "Metaversus Page",
+    weblink: "https://djengo-app.vercel.app",
+    githublink: "https://github.com/AI-ZeeK/new-assessment",
+    stack: [
+      "ReactJS",
+      "Typescript",
+      "CSS",
+      "NodeJS",
+      "ExpressJS",
+      "Prisma",
+      "MongoDB",
+    ],
+    desc: "The Fullstack Social Media Project is a tool that enables users to make Posts, Comments, Add friends, View Friends Posts. With features like create, update, delete, and view.",
+  },
+  {
     id: "1e3fb0m947f2",
     state: false,
     img: "/portfolio/Metaversus.png",
@@ -471,9 +495,17 @@ export const projects = [
       "Framer Motion",
       "CSS",
       "Tailwind CSS",
-      "Javascript",
     ],
     desc: "The Next.js project focuses on developing a modern frontend using principles such as CSS positioning, animations, and responsiveness. It emphasizes my understanding of these concepts to create dynamic, user-friendly web applications.",
+  },
+  {
+    id: "1e3fb0Klp7f2",
+    state: false,
+    img: "/portfolio/black.jpeg",
+    head: "Dev Jobs app",
+    githublink: "https://github.com/AI-ZeeK/Dev_Jobs",
+    stack: ["React Native", "Typescript", "Rapid Api"],
+    desc: "A developer job react native mobile application that shows all available jobs and its data.",
   },
   {
     id: "3eopb0m8qjf2",
@@ -498,7 +530,6 @@ export const projects = [
       "Material UI",
       "CSS",
       "SCSS",
-      "Javascript",
       "NodeJS",
       "ExpressJS",
       "MongoDB",

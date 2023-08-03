@@ -1,8 +1,8 @@
 import Image from "next/image";
 import footerStyle from "../styles/Footer.module.scss";
-import { CiLinkedin, CiFacebook } from "react-icons/ci";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
-import { motion } from "framer-motion";
+import {CiLinkedin, CiFacebook} from "react-icons/ci";
+import {AiFillGithub, AiOutlineTwitter} from "react-icons/ai";
+import {motion} from "framer-motion";
 import {
   fadeIn,
   footerVariants,
@@ -21,8 +21,9 @@ const Footer = () => {
             variants={fadeIn("left", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}
-            className={footerStyle.footer_top_image}>
+            viewport={{once: false, amount: 0.25}}
+            className={footerStyle.footer_top_image}
+          >
             <Image
               className={footerStyle.img}
               width={200}
@@ -35,10 +36,12 @@ const Footer = () => {
             variants={fadeIn("right", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}
-            className={footerStyle.footer_top_info}>
+            viewport={{once: false, amount: 0.25}}
+            className={footerStyle.footer_top_info}
+          >
             <h1>Isaac Williams</h1>
-            <p>FullStack Web2/Web3 Developer</p>
+            <p>FullStack Developer</p>
+            <p>Mobile Developer</p>
             <p>Smart contract Developer</p>
           </motion.div>
         </div>
@@ -47,27 +50,31 @@ const Footer = () => {
           variants={staggerContainer}
           whileInView="show"
           initial="hidden"
-          viewport={{ once: false, amount: 0.25 }}
-          className={footerStyle.footer_top_links}>
+          viewport={{once: false, amount: 0.25}}
+          className={footerStyle.footer_top_links}
+        >
           <motion.li
             variants={fadeIn("left", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href={`#home`}>Home</Link>
           </motion.li>
           <motion.li
             variants={fadeIn("left", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href={`#portfolio`}>Portfolio</Link>
           </motion.li>
           <motion.li
             variants={fadeIn("left", "tween", 0, 1)}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href={`#services`}>Services</Link>
           </motion.li>
           {/* <motion.li
@@ -82,13 +89,15 @@ const Footer = () => {
           variants={staggerContainer}
           whileInView="show"
           initial="hidden"
-          viewport={{ once: false, amount: 0.25 }}
-          className={footerStyle.footer_top_socials}>
+          viewport={{once: false, amount: 0.25}}
+          className={footerStyle.footer_top_socials}
+        >
           <motion.li
             variants={planetVariants("right")}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href="https://www.linkedin.com/in/isaac-iyaye-williams-3143041b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHvVVSyhITLuhOh5vKTGG%2Bg%3D%3D">
               <CiLinkedin />
             </Link>
@@ -97,7 +106,8 @@ const Footer = () => {
             variants={planetVariants("right")}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href="https://github.com/AI-ZeeK">
               <AiFillGithub />
             </Link>
@@ -113,7 +123,8 @@ const Footer = () => {
             variants={planetVariants("right")}
             whileInView="show"
             initial="hidden"
-            viewport={{ once: false, amount: 0.25 }}>
+            viewport={{once: false, amount: 0.25}}
+          >
             <Link href="https://twitter.com/_____Mamba?t=0fdrPb3C-VURWSLabHYhlw&s=09">
               <AiOutlineTwitter />
             </Link>
@@ -124,8 +135,9 @@ const Footer = () => {
         variants={footerVariants}
         whileInView="show"
         initial="hidden"
-        viewport={{ once: false, amount: 0.25 }}
-        className={footerStyle.footer_bottom}>
+        viewport={{once: false, amount: 0.25}}
+        className={footerStyle.footer_bottom}
+      >
         <span>&copy; Isaac Tubonibo</span>
         <strong>All rights reserved</strong>
       </motion.div>

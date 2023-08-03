@@ -137,6 +137,10 @@ const HomePage = ({targetRef}: any) => {
               title="Full Stack Developer"
               textStyles={`${homeStyles.home__subtitle}`}
             />
+            <TypingText
+              title="Mobile Developer"
+              textStyles={`${homeStyles.home__subtitle}`}
+            />
 
             <motion.p
               variants={fadeIn("down", "tween", 0, 1)}
@@ -145,14 +149,14 @@ const HomePage = ({targetRef}: any) => {
               viewport={{once: false, amount: 0.25}}
               className={`${homeStyles.home__description} mb-2`}
             >
-              I am a full stack web developer with a passion for creating
-              high-quality web applications. My technical expertise includes
-              proficiency in front-end and back-end development, as well as
-              experience with various web development frameworks and programming
-              languages. I am also skilled in smart contract development and
-              blockchain integration, allowing me to create efficient and
-              scalable solutions that leverage the power of blockchain
-              technology.
+              Highly skilled and experienced Full-stack Developer and Mobile App
+              Developer with a passion for building innovative solutions that
+              drive business growth. My dedication to excellence and commitment
+              to staying abreast of the latest technologies have allowed me to
+              craft solutions that help businesses achieve exponential growth. I
+              am also skilled in smart contract development and blockchain
+              integration, allowing me to create efficient and scalable
+              solutions that leverage the power of blockchain technology.
             </motion.p>
             <motion.div
               variants={fadeIn("left", "tween", 0, 1.2)}
