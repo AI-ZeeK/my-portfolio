@@ -467,7 +467,7 @@ export const projects = [
     id: "1e3fbP2947f2",
     state: false,
     img: "/portfolio/Djengo.png",
-    head: "Metaversus Page",
+    head: "Djengo app",
     weblink: "https://djengo-app.vercel.app",
     githublink: "https://github.com/AI-ZeeK/new-assessment",
     stack: [
