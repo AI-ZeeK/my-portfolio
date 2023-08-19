@@ -134,13 +134,10 @@ const HomePage = ({targetRef}: any) => {
               <span className={`${homeStyles.home__title_span}`}>Isaac</span>
             </motion.h1>
             <TypingText
-              title="Full Stack Developer"
+              title="Software Developer"
               textStyles={`${homeStyles.home__subtitle}`}
             />
-            <TypingText
-              title="Mobile Developer"
-              textStyles={`${homeStyles.home__subtitle}`}
-            />
+    
 
             <motion.p
               variants={fadeIn("down", "tween", 0, 1)}
@@ -150,8 +147,7 @@ const HomePage = ({targetRef}: any) => {
               className={`${homeStyles.home__description} mb-2`}
             >
               Highly skilled and experienced Full-stack Developer and Mobile App
-              Developer with a passion for building innovative solutions that
-              drive business growth. My dedication to excellence and commitment
+              Developer. My dedication to excellence and commitment
               to staying abreast of the latest technologies have allowed me to
               craft solutions that help businesses achieve exponential growth. I
               am also skilled in smart contract development and blockchain
