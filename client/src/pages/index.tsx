@@ -29,7 +29,7 @@ export default function Home() {
         />
         <meta
           name="Keywords"
-          content="Isaac, Tubonibo, Portfolio, Website, Full-stack, developer, full, stack, web3, React, Redux, Next, Next.js, Node.js, Nigerian, Programmer, Developer, Blockchain, Solidity, Front, Front-end, Frontend, Fullstack"
+          content="Isaac, Isaac Williams, Isaac Tubonibo, Isaac Iyaye Williams, Isaac Iyaye-Williams, Developers in NIgeria, Developers in West Africa, Developers in Africa, Developers Near Me, Isaac Tubonibo Williams,  Tubonibo, Portfolio, Website, Full-stack, developer, full, stack, web3, React, Redux, Next, Next.js, Node.js, Nigerian, Programmer, Developer, Blockchain, Solidity, Front, Front-end, Frontend, Fullstack"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="color-scheme" content="dark light" />
