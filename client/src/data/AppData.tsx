@@ -495,6 +495,16 @@ export const projects = [
     desc: "Homez is a modern and user-friendly web application built with Next.js, designed to simplify the process of finding the perfect apartment for your holiday getaway or long-term stay. With a clean and intuitive interface, Homez offers a seamless experience for both property owners and potential renters.",
   },
   {
+    id: "90LAI37DKKSN",
+    state: false,
+    img: "/portfolio/BimBum.png",
+    head: "BimBum",
+    weblink: "https://soty-app.vercel.app",
+    githublink: "https://github.com/AI-ZeeK/soty-app",
+    stack: ["Typescript", "NextJS", "SCSS", "Tailwind CSS"],
+    desc: "BimBum is a small scale mockup for a large E-commerce application with an in built payment gateway, It's responsive and user friendly.",
+  },
+  {
     id: "1E3fB0M947F2",
     state: false,
     img: "/portfolio/Metaversus.png",

@@ -6,10 +6,7 @@ import Image from "next/image";
 
 const Portfolio = () => {
   return (
-    <motion.section
-      id="portfolio"
-      className={`${serviceStyle.service_section}`}
-    >
+    <motion.section className={`${serviceStyle.service_section}`}>
       <motion.div className={`${serviceStyle.service_head_box}`}>
         <h1 className={`${serviceStyle.service_head}`}>Projects</h1>
         <p className={`${serviceStyle.service_desc}`}>Some of my projects</p>

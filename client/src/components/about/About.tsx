@@ -9,7 +9,7 @@ import {fadeIn} from "@/utils/motion";
 const aboutImage = "/avel.jpg";
 const About = () => {
   return (
-    <div id="about" className={`${aboutStyle.about_section}`}>
+    <div className={`${aboutStyle.about_section}`}>
       <motion.div className={`${aboutStyle.about_head_box}`}>
         <h1 className={`${aboutStyle.about_head}`}>About</h1>
         <p className={`${aboutStyle.about_desc}`}>My Introduction</p>

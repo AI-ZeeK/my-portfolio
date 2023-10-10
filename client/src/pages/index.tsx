@@ -40,17 +40,27 @@ export default function Home() {
           <Navigation />
         </header>
         <main className={homeStyles.main}>
-          <HomePage />
+          <div id="home">
+            <HomePage />
+          </div>
           <div className="line-through" />
-          <About />
+          <div id="about">
+            <About />
+          </div>
           <div className="line-through" />
-          <Skills />
+          <div id="skills">
+            <Skills />
+          </div>
           {/*  <div className="line-through" />
 					// <Services /> */}
           <div className="line-through" />
-          <Portfolio />
+          <div id="portfolio">
+            <Portfolio />
+          </div>
           <div className="line-through" />
-          <Contact />
+          <div id="contact-me">
+            <Contact />
+          </div>
         </main>
         <div className="line-through" />
         <Footer />

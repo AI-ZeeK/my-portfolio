@@ -13,7 +13,6 @@ const HomePage = ({targetRef}: any) => {
     <section
       ref={targetRef}
       className={`${homeStyles.home} ${homeStyles.section}`}
-      id="home"
     >
       <div className={`${homeStyles.home__container} ${homeStyles.grid}`}>
         <div className={`${homeStyles.home__content} `}>
@@ -137,7 +136,6 @@ const HomePage = ({targetRef}: any) => {
               title="Software Developer"
               textStyles={`${homeStyles.home__subtitle}`}
             />
-    
 
             <motion.p
               variants={fadeIn("down", "tween", 0, 1)}
@@ -147,10 +145,10 @@ const HomePage = ({targetRef}: any) => {
               className={`${homeStyles.home__description} mb-2`}
             >
               Highly skilled and experienced Full-stack Developer and Mobile App
-              Developer. My dedication to excellence and commitment
-              to staying abreast of the latest technologies have allowed me to
-              craft solutions that help businesses achieve exponential growth. I
-              am also skilled in smart contract development and blockchain
+              Developer. My dedication to excellence and commitment to staying
+              abreast of the latest technologies have allowed me to craft
+              solutions that help businesses achieve exponential growth. I am
+              also skilled in smart contract development and blockchain
               integration, allowing me to create efficient and scalable
               solutions that leverage the power of blockchain technology.
             </motion.p>
