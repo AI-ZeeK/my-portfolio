@@ -1,5 +1,5 @@
 import React from "react";
-import {IoHome, IoHomeOutline, IoLocation} from "react-icons/io5";
+import { IoHome, IoHomeOutline, IoLocation } from "react-icons/io5";
 import {
   HiUser,
   HiOutlineUser,
@@ -14,12 +14,12 @@ import {
   BsTools,
   BsFillMenuAppFill,
 } from "react-icons/bs";
-import {RiSuitcaseLine, RiSuitcaseFill} from "react-icons/ri";
-import {AiOutlinePicture, AiFillPicture, AiTwotoneApi} from "react-icons/ai";
-import {GoBrowser} from "react-icons/go";
-import {IoIosContract} from "react-icons/io";
-import {SiHiveBlockchain} from "react-icons/si";
-import {BiLocationPlus, BiSearchAlt, BiTestTube} from "react-icons/bi";
+import { RiSuitcaseLine, RiSuitcaseFill } from "react-icons/ri";
+import { AiOutlinePicture, AiFillPicture, AiTwotoneApi } from "react-icons/ai";
+import { GoBrowser } from "react-icons/go";
+import { IoIosContract } from "react-icons/io";
+import { SiHiveBlockchain } from "react-icons/si";
+import { BiLocationPlus, BiSearchAlt, BiTestTube } from "react-icons/bi";
 import {
   MdOutlineDashboard,
   MdDashboard,
@@ -28,7 +28,7 @@ import {
   MdOutlineFlipToFront,
   MdOutlineFlipToBack,
 } from "react-icons/md";
-import {IoChevronUp, IoChevronDown} from "react-icons/io5";
+import { IoChevronUp, IoChevronDown } from "react-icons/io5";
 
 const css = "/css3.svg";
 const nodejs = "/node-js.svg";
@@ -62,6 +62,9 @@ const ethers = "/download.png";
 const jest = "/jest-2.svg";
 const apolloGraphQl = "/apollo-graphql-1.svg";
 const nest = "/logo-small.svg";
+const flask = "/flask.svg";
+const python = "/python-3.svg";
+const vue = "/vue.svg";
 
 const angular = "/angular-icon.svg";
 const ngxs = "/NGXS.png";
@@ -116,10 +119,10 @@ export const NavData = [
 
 export const TechStack = [
   {
-    id: "2538b28d",
+    id: "2538la0d",
     state: false,
     icon3: <MdOutlineFlipToFront />,
-    desc: "Frontend Development",
+    desc: "LANGUAGES",
     icon1: <IoChevronUp />,
     icon2: <IoChevronDown />,
     stack: [
@@ -135,6 +138,28 @@ export const TechStack = [
         desc: "Typescript",
         img: typescript,
       },
+      {
+        id: "09f6f95555ab",
+        state: false,
+        desc: "Solidity",
+        img: solidity,
+      },
+      {
+        id: "01js9f9555ab",
+        state: false,
+        desc: "Python",
+        img: python,
+      },
+    ],
+  },
+  {
+    id: "2538b28d",
+    state: false,
+    icon3: <MdOutlineFlipToFront />,
+    desc: "Frontend Development",
+    icon1: <IoChevronUp />,
+    icon2: <IoChevronDown />,
+    stack: [
       {
         id: "70193b4179d5",
         state: false,
@@ -153,24 +178,31 @@ export const TechStack = [
         desc: "Next",
         img: nextjs,
       },
-      //   {
-      //     id: "29c6a1620243",
-      //     state: false,
-      //     desc: "Redux",
-      //     img: redux,
-      //   },
       {
         id: "ba6b6y5a98c09",
         state: false,
         desc: "Angular",
         img: angular,
       },
-      //   {
-      //     id: "29cb61620243",
-      //     state: false,
-      //     desc: "NGXS",
-      //     img: ngxs,
-      //   },
+      {
+        id: "ba9osny5a9109",
+        state: false,
+        desc: "Vue",
+        img: vue,
+      },
+      {
+        id: "29c6a1620243",
+        state: false,
+        desc: "Redux",
+        img: redux,
+      },
+
+      {
+        id: "29cb61620243",
+        state: false,
+        desc: "NGXS",
+        img: ngxs,
+      },
 
       {
         id: "9a14ba727565",
@@ -248,6 +280,12 @@ export const TechStack = [
         state: false,
         desc: "NestJS",
         img: nest,
+      },
+      {
+        id: "ba6b50a19029",
+        state: false,
+        desc: "Flask",
+        img: flask,
       },
       {
         id: "70193b0179d5",
@@ -529,7 +567,7 @@ export const projects = [
     weblink: "https://kitchenstories-puce.vercel.app",
     githublink: "https://github.com/AI-ZeeK/social-app",
     stack: ["Angular", "NGXS", "Typescript", "CSS"],
-    desc: "An angular application with dynamic routes, grid and flexbox alignments.",
+    desc: "Kitchen stories is a frontend angular application with advance frontend security and UI adaptations, Properly handled routing as well.",
   },
   {
     id: "1E3FB0KLP7F2",
