@@ -29,7 +29,7 @@ import {
   MdOutlineFlipToBack,
 } from "react-icons/md";
 import { IoChevronUp, IoChevronDown } from "react-icons/io5";
-
+import { FaLanguage } from "react-icons/fa6";
 const css = "/css3.svg";
 const nodejs = "/node-js.svg";
 const nextjs = "/next.js.svg";
@@ -121,8 +121,8 @@ export const TechStack = [
   {
     id: "2538la0d",
     state: false,
-    icon3: <MdOutlineFlipToFront />,
-    desc: "LANGUAGES",
+    icon3: <FaLanguage />,
+    desc: "Languages",
     icon1: <IoChevronUp />,
     icon2: <IoChevronDown />,
     stack: [
