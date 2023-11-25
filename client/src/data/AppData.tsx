@@ -29,7 +29,7 @@ import {
   MdOutlineFlipToBack,
 } from "react-icons/md";
 import { IoChevronUp, IoChevronDown } from "react-icons/io5";
-import { FaLanguage } from "react-icons/fa6";
+import { FaLanguage } from "react-icons/fa";
 
 const css = "/css3.svg";
 const nodejs = "/node-js.svg";
