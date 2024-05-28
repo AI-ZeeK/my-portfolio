@@ -484,7 +484,7 @@ export const contactMe = [
   {
     id: "01336ff2",
     head: "Mobile Number",
-    desc: "(+234) 812-940-5476",
+    desc: "(+234) 816-654-2474",
     icon: <BsPhoneFill />,
   },
   {
